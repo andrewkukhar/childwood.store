@@ -1,0 +1,529 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* header */
+.header {
+    font-size: 14px;
+    margin-top: 10px;
+    font-family: "Jost", sans-serif;
+    color: #fff;
+    margin-bottom: 80px;
+}
+.navbar {
+    height: 80px;
+    margin: 2px 2px 150px 2px;
+}
+.bg-pink {
+    background-color: hsla(143, 37%, 85%, 0.897);
+}
+.navbar-main {
+    padding: 2px 20px 10px 20px;
+    height: 80px;
+    font-family: "Jost", sans-serif;
+}
+.navbar-main a {
+    color: #fff;
+    font-family: "Jost", sans-serif;
+    padding: 5px 2px 5px 5px;
+}
+.navbar-main a:hover {
+    color: rgb(109, 111, 114);
+}
+.fa-shopping-cart {
+    margin: 10px 10px 10px 10px;
+    font-size: 22px;
+    color: #fff;
+}
+.fa-shopping-cart:hover {
+    color: rgb(109, 111, 114);
+}
+.badge.black {
+    font-size: 15px;
+}
+.body {
+    height: auto;
+    width: 1400px;
+}
+/* header */
+/* pages cover */
+.pages-cover {
+    background-color: #fff;
+    position: relative;
+    margin: 50px 10px 50px 10px;
+}
+.pages-cover h3 {
+    font-family: "Jost", sans-serif;
+    position: absolute;
+    font-size: 20px;
+    padding: 30px 5px 0 5px;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    color: rgb(67, 67, 73);
+}
+/* pages cover */
+/* product card */
+.product-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+    margin: 5px 0 50px 0;
+    max-width: 100%;
+    font-family: "Jost", sans-serif;
+}
+.product-card:hover {
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+}
+.product-details {
+    padding: 10px;
+}
+.product-details h5 a {
+    margin-top: 10px;
+    font-weight: 700;
+    color: rgb(67, 67, 73);
+    display: block;
+    height: 30px;
+    overflow: hidden;
+    text-decoration: none;
+}
+.product-details h5 a:hover {
+    color: rgb(109, 111, 114);
+}
+.product-details p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgba(20, 2, 2, 0.801);
+    height: 80px;
+    overflow: hidden;
+}
+.product-details p a {
+    text-decoration: none;
+    font-weight: 400;
+    color: rgba(20, 2, 2, 0.801);
+}
+.product-details p a:hover {
+    color: rgb(109, 111, 114);
+}
+.product-details p:hover {
+    overflow: visible;
+}
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    height: 120px;
+}
+.product-price {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    font-weight: 500;
+}
+.product-price h6 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: rgba(20, 2, 2, 0.801);
+}
+.product-price strong {
+    color: #000;
+}
+.product-price span {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: rgba(20, 2, 2, 0.801);
+}
+
+.product-links {
+    font-size: 12px;
+    margin-left: 10px;
+}
+.carousel-item {
+    width: 100%; /* Ширина области */
+    height: 550px; /* Высота области */
+    margin: 0; /* Обнуляем отступы */
+}
+.index-page {
+    min-height: 550px; /* Высота области */
+}
+.carousel-item img {
+    width: 100%; /* Ширина изображений */
+    height: 100%; /* Высота изображении */
+    max-height: 550px;
+    max-width: 100%;
+    object-fit: cover; /* Вписываем фотографию в область */
+    border-radius: 30%;
+}
+.product-price small {
+    font-size: 13px;
+    font-weight: 500;
+}
+.link-details {
+    margin: 1px 1px;
+    padding: 1px 1px;
+}
+.link-details a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 12px;
+    background-color: hsla(141, 28%, 88%, 0.897);
+}
+.link-details a:hover {
+    color: rgb(109, 111, 114);
+    background-color: hsla(143, 35%, 79%, 0.897);
+}
+.link-details {
+    padding: 10px;
+    font-family: "Jost", sans-serif;
+}
+/* product card */
+/* footer */
+.footer {
+    padding: 10px;
+    font-family: "Jost", sans-serif;
+    text-decoration: none;
+}
+.list-unstyled a {
+    color: black;
+    text-decoration: none;
+}
+.list-unstyled a:hover {
+    color: rgb(109, 111, 114);
+}
+.footer-icons {
+    display: flex;
+    margin: 0 20px 0 20px;
+    justify-content: space-evenly;
+}
+.footer-icons i {
+    font-size: 40px;
+    color: rgb(67, 67, 73);
+}
+.contakts-data-icons i {
+    font-size: 24px;
+    color: rgb(67, 67, 73);
+}
+/* footer */
+/* content section */
+.content-paid-delivery {
+    margin: 50px 20px 50px 20px;
+    width: 1000px;
+}
+/* content section */
+/* sending request */
+.btn {
+    margin: 5px 10px 10px 5px;
+}
+.form {
+    margin: 50px 20px 50px 2px;
+    color: #000;
+    padding: 20px 20px;
+    font-family: "Jost", sans-serif;
+}
+.form-body {
+    position: relative;
+    width: 800px;
+    margin: 20px 20px 20px 20px;
+}
+/* .form-body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(3, 2, 2, 0.384) url("../img/loading.gif") center / 50px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0, 5s ease 0s;
+}
+.form-body._sending::after {
+    opacity: 1;
+    visibility: visible;
+} */
+.form * {
+    outline: none;
+}
+.form-title {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0 30px 20px;
+}
+.form-item {
+    margin: 10px 5px 20px 5px;
+}
+.form-item select {
+    width: 400px;
+    padding: 0 20px;
+    margin: 10px 5px 10px 5px;
+}
+.form-item input {
+    max-width: 400px;
+    padding: 0 20px;
+    margin: 10px 5px 10px 5px;
+}
+.form-label {
+    font-size: 24px;
+    padding: 0 20px;
+    display: block;
+    margin: 10px 5px 10px 5px;
+}
+.form-input {
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 1px;
+    width: 60%;
+    font-size: 18px;
+    transition: all 0, 5s ease 0s;
+}
+.form-input:focus {
+    box-shadow: 0 0 15px rgb(250, 212, 217);
+}
+.form-input._error {
+    box-shadow: 0 0 15px #ff0000;
+}
+textarea.form-input {
+    min-height: 120px;
+    resize: vertical;
+    padding: 20px;
+    width: 400px;
+}
+.form-button {
+    margin: 0 10px 0 10px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    background-color: rgb(250, 212, 217);
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border-radius: 20px;
+    transition: background-color 0, 5s ease 0s;
+    position: relative;
+    top: 0;
+    object-fit: cover;
+}
+.form-button:hover {
+    background-color: rgb(238, 181, 188);
+}
+.form-button:active {
+    top: 3px;
+}
+/* for other pages */
+.logo-cover-mini img {
+    width: auto;
+    height: 250px;
+}
+.logo-cover-mini h3 {
+    width: 100%;
+    height: auto;
+    font-size: 10px;
+    padding: 15px 5px 0 5px;
+}
+.logo-cover-mini-propcard img {
+    width: auto;
+    height: 150px;
+}
+.logo-cover-mini-propcard h3 {
+    width: 100%;
+    height: auto;
+    font-size: 5px;
+    padding: 10px 5px 0 5px;
+}
+.page-content {
+    font-family: "Jost", sans-serif;
+    color: black;
+}
+.page-content a {
+    color: black;
+    text-decoration: none;
+}
+.page-content a:hover {
+    color: rgb(109, 111, 114);
+}
+.text-paid-delivery {
+    max-width: 400px;
+    margin: 20px 20px;
+}
+.text-paid-delivery p {
+    padding: 5px 5px 5px 5px;
+}
+.text-paid-delivery h3 {
+    padding: 15px 5px 15px 5px;
+}
+.bed-linen-ordered {
+    visibility: hidden;
+    height: 1px;
+}
+/* for other pages */
+/* card model pages */
+.card-model {
+    font-family: "Jost", sans-serif;
+    color: #000;
+    margin: 10px 5px 10px 5px;
+}
+.photo-card-model {
+    padding: 10px 10px;
+}
+.subscribe-card-model {
+    padding: 30px 10px;
+}
+.card-model-text {
+    margin: 50px 20px 50px 20px;
+}
+.card-model-text p {
+    font-family: "Jost", sans-serif;
+    color: #000;
+}
+.card-model-text h5 {
+    font-family: "Jost", sans-serif;
+    color: #000;
+}
+.card-model-text h6 {
+    font-family: "Jost", sans-serif;
+    color: #000;
+}
+.card-model-text small {
+    font-family: "Jost", sans-serif;
+    color: #000;
+}
+.card-model-text strong {
+    font-family: "Jost", sans-serif;
+    color: #000;
+}
+.last-price {
+    padding-bottom: 15px;
+}
+.card-model-text a {
+    padding: 5px 5px;
+    text-decoration: none;
+    color: rgb(248, 161, 174);
+    font-size: 16px;
+}
+.card-model-text a:hover {
+    color: rgb(109, 111, 114);
+}
+.card-model-text i {
+    padding: 5px 5px;
+    color: rgb(248, 161, 174);
+    font-weight: 500;
+}
+.card-model-text i:hover {
+    color: rgb(109, 111, 114);
+}
+.button-for-order {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    margin: 20px 50px 70px 50px;
+    padding: 10px 20px;
+}
+.button-for-order a {
+    margin: 10px 0;
+    padding: 10px 10px;
+    position: absolute;
+    left: 15%;
+    top: 30px;
+    right: 15%;
+    bottom: 20px;
+    min-height: 60px;
+    background-color: hsla(141, 28%, 88%, 0.897);
+    color: rgb(67, 67, 73);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 20px;
+    transition: background-color 0, 5s ease 0s;
+    object-fit: cover;
+    text-decoration: none;
+}
+.button-for-order a:hover {
+    color: rgb(109, 111, 114);
+    background-color: hsla(143, 35%, 79%, 0.897);
+}
+/* card model pages */
+/* popup  */
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.476);
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+.popup:target .popup-content {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+.popup-body {
+    min-height: 100%;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+.popup-content {
+    background-color: #fff;
+    color: black;
+    max-width: 400px;
+    max-height: 500px;
+    padding: 25px;
+    position: relative;
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    transform: translate(opx, -100%);
+}
+.popup-body a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+.popup-title {
+    color: #000;
+    font-size: 24px;
+    margin: 10px 10px 30px 10px;
+}
+.popup-text a {
+    color: black;
+    font-size: 12px;
+}
+.popup-text a:hover {
+    color: rgb(109, 111, 114);
+    font-size: 13px;
+}
+.popup-text {
+    display: flex;
+    flex-direction: column;
+}
+/*  popup */
