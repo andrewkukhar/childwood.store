@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  <title>childwood_ua</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header id="header">
+    <div class="container-fluid header">
+      <div class="row">
+        <nav class="navbar navbar-nav nav-flex-icons fixed-top navbar-light bg-pink">
+          <div class="navbar-main d-flex justify-content-center align-items-center">
+            <a class="nav-link nav-once-menu col-3 col-xs-3 col-sm-3 col-md-4 col-lg-4 col-xl-6 active"
+              aria-current="page" target="_self" href="index.html">ГЛАВНАЯ</a>
+            <a class="nav-link col-3  col-xs-3 col-sm-3 col-md-4 col-lg-4 col-xl-6" href="index.html#catalog"
+              data-scroll="catalog">КАТАЛОГ</a>
+            <a class="nav-link col-3 col-xs-3 col-sm-3 col-md-4 col-lg-4 col-xl-6" href="about_us.html"
+              data-scroll="news">О НАС</a>
+            <a class="nav-link col-3 col-xs-3 col-sm-4 col-md-6 col-lg-6 col-xl-12" href="paid_delivery.html"
+              data-scroll="news">ДОСТАВКА</a>
+          </div>
+          <div class="navbar-main-right d-flex justify-content-center align-items-center">
+            <a target="_self" href="#popup" class="nav-link col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <i class="fas fa-shopping-cart">
+              </i>
+            </a>
+            <a class="nav-link col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" href="/cart.html"
+              data-scroll="ua">UA</a>
+            <!-- modal Cart -->
+            <div id="popup" class="popup d-flex justify-content-center align-items-center">
+              <div class="popup-body">
+                <div class="popup-content">
+                  <div class="popup-header bg-pink">
+                    <a target="_self" href="#header" class="popup-close">X</a>
+                    <div class="popup-title">Перейти к заказу:</div>
+                  </div>
+                  <div class="popup-text">
+                    <a href="cart.html">Заказать Кроватку</a>
+                    <a href="cart_for_table_chair.html">Заказать Столик и Стульчик</a>
+                    <a href="cart_for_bl.html">Заказать Постельное Бельё</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- modal Cart -->
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- form for order bed -->
+  <section class="bg-light">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="d-flex justify-content-center align-items-center">
+          <form action="send.php" method="POST" id="form" class="form-body">
+            <div class="form-title">
+              <h3>Заказать Кроватку</h3>
+            </div>
+            <div class="form-item">
+              <label for="validationDefault01" class="form-label">Имя*:</label>
+              <input id="validationDefault01" name="name" type="text" class="form-control" value="Катерина" required>
+            </div>
+            <div class="form-item">
+              <label for="validationDefault02" class="form-label">Телефон*:</label>
+              <input id="validationDefault02" name="phone" type="text" class="form-control" value="0507656153" required>
+            </div>
+            <div class="form-item">
+              <label for="validationDefault03" class="form-label">Выбрать модель:</label>
+              <select id="validationDefault03" name="model" class="form-select" required>
+                <option value="">Выбрать</option>
+                <option value="Класик">Класик</option>
+                <option value="Сканди">Сканди</option>
+                <option value="Мишель">Мишель</option>
+                <option value="Полли">Полли</option>
+                <option value="Домик">Домик</option>
+                <option value="Домик мини">Домик мини</option>
+              </select>
+            </div>
+            <div class="form-item">
+              <label for="validationDefault04" class="form-label">Выбрать размер:</label>
+              <select id="validationDefault04" name="size" class="form-select" required>
+                <option value="">Выбрать</option>
+                <option value="160*80">160*80</option>
+                <option value="190*80">190*80</option>
+                <option value="190*90">190*90</option>
+              </select>
+            </div>
+            <div class="form-item">
+              <label for="validationDefault05" class="form-label">Количество кроваток:</label>
+              <select id="validationDefault05" name="quantityBed" class="form-select" required>
+                <option value="">Выбрать</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+
+            <div class="form-item">
+              <label for="validationDefault06" class="form-label">Выбрать сторону бортика:</label>
+              <select id="validationDefault06" name="side" class="form-select" required>
+                <option value="">Выбрать</option>
+                <option value="правая">правая</option>
+                <option value="левая">левая</option>
+              </select>
+            </div>
+            <div class="form-item">
+              <label for="validationDefault07" class="form-label">Комплектация с или без ящиков:</label>
+              <select id="validationDefault07" name="boxes" class="form-select" required>
+                <option value="">Выбрать</option>
+                <option value="с ящиками">с ящиками</option>
+                <option value="без ящиков">без ящиков</option>
+              </select>
+            </div>
+            <div class="form-item">
+              <label for="validationDefault08" class="form-label">Форма выреза на ящиках:</label>
+              <select id="validationDefault08" name="cutout" class="form-select" required>
+                <option value="">Выбрать</option>
+                <option value="стандартная">стандартная</option>
+                <option value="сердечек">форма сердечек</option>
+                <option value="звездочек">форма звездочек</option>
+              </select>
+            </div>
+            <div class="form-item">
+              <label for="formMessage" class="form-label">Комментарий к заказу:</label>
+              <textarea name="formMessage" cols="40" rows="5"></textarea>
+            </div>
+            <div class="form-item">
+              <label for="validationDefault09" class="form-label">Способ обратной связи:</label>
+              <select id="validationDefault09" name="feedback" class="form-select" required>
+                <option value="">Выбрать</option>
+                <option value="написать на Viber">написать на Viber</option>
+                <option value="перезвонить">перезвонить</option>
+              </select>
+            </div>
+            <input type="submit" class="form-button" value="Отправить">
+            <input type="hidden" name="act" value="order">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer  -->
+  <footer class="bg-pink">
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-6">
+            <h4>ИНФОРМАЦИЯ</h4>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="about_us.html">История</a></li>
+              <li><a href="paid_delivery.html">Оплата и доставка</a></li>
+              <li><a href="contakts.html">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-6">
+            <h4>КОНТАКТЫ</h4>
+            <ul class="list-unstyled">
+              <li>Украина, г. Черновцы</li>
+              <li class="contakts-data-icons">
+                <a target="_self" href="tel:+380507656153">+380 (50) 76 56 153</a>
+                <i class="fab fa-viber"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-6">
+            <h4>СОЦ СЕТИ</h4>
+            <div class="footer-icons">
+              <a href="https://www.facebook.com/ChildWood.ua"><i class="fab fa-facebook"></i> </a>
+              <a href="https://www.instagram.com/childwood_ua/"><i class="fab fa-instagram"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
