@@ -6,9 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://andreyrise.github.io/ru/css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,735 +18,731 @@
 
 <body>
   <!-- header -->
-  <header id="header">
-    <div class="container-fluid header">
-      <div class="row">
-        <nav class="navbar navbar-nav nav-flex-icons fixed-top navbar-light bg-pink">
-          <div class="navbar-main d-flex justify-content-center align-items-center">
-            <a class="nav-link nav-once-menu col-3 col-xs-3 col-sm-3 col-md-4 col-lg-4 col-xl-6 active"
-              aria-current="page" target="_self" href="index.html">ГЛАВНАЯ</a>
-            <a class="nav-link col-3  col-xs-3 col-sm-3 col-md-4 col-lg-4 col-xl-6" href="index.html#catalog"
-              data-scroll="catalog">КАТАЛОГ</a>
-            <a class="nav-link col-3 col-xs-3 col-sm-3 col-md-4 col-lg-4 col-xl-6" href="about_us.html"
-              data-scroll="news">О НАС</a>
-            <a class="nav-link col-3 col-xs-3 col-sm-4 col-md-6 col-lg-6 col-xl-12" href="paid_delivery.html"
-              data-scroll="news">ДОСТАВКА</a>
-          </div>
-          <div class="navbar-main-right d-flex justify-content-center align-items-center">
-            <a target="_self" href="#popup" class="nav-link col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <i class="fas fa-shopping-cart">
-              </i>
-            </a>
-            <a class="nav-link col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" href="/index.html"
-              data-scroll="ua">UA</a>
-            <!-- modal Cart -->
-            <div id="popup" class="popup d-flex justify-content-center align-items-center">
-              <div class="popup-body">
-                <div class="popup-content">
-                  <div class="popup-header bg-pink">
-                    <a target="_self" href="#header" class="popup-close">X</a>
-                    <div class="popup-title">Перейти к заказу:</div>
-                  </div>
-                  <div class="popup-text">
-                    <a href="cart.html">Заказать Кроватку</a>
-                    <a href="cart_for_table_chair.html">Заказать Столик и Стульчик</a>
-                    <a href="cart_for_bl.html">Заказать Постельное Бельё</a>
-                  </div>
-                </div>
-              </div>
+  <div class="wraper">
+    <header class="header">
+      <div class="container">
+        <div class="">
+          <nav class="menu__body">
+            <div class="nav__menu">
+              <a class="menu__link" href="index.html">ГЛАВНАЯ</a>
+              <a class="menu__link" href="index.html#catalog">КАТАЛОГ</a>
+              <a class="menu__link" href="about_us.html" >О НАС</a>
+              <a class="menu__link" href="paid_delivery.html" data-scroll="news">ДОСТАВКА</a>
             </div>
-            <!-- modal Cart -->
-          </div>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-
-  <!-- section for content -->
-  <section class="bg-light">
-    <div class="content-section">
-      <!-- photo for page logo cover -->
-      <div class="pages-cover text-center">
-        <img src="img/logo1.jpg" class="rounded" alt="foto-logo">
-        <h3>Семейная мастерская детской мебели из МАСИВА ДУБА</h3>
-      </div>
-      <!-- catalog production -->
-      <div class="container" id="catalog">
-        <div class="row">
-
-          <!-- bed model Classik -->
-          <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="product-card">
-              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                    aria-label="Slide 6"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item text-center index-page active">
-                    <a href="classik.html"><img src="img/Classik/Classik1.JPG" class="d-block rounded w-100"
-                        alt="classik1"></a>
-                  </div>
-                  <div class="carousel-item text-center index-page">
-                    <a href="classik.html"><img src="img/Classik/Classik2.JPG" class="d-block rounded w-100"
-                        alt="classik2"></a>
-                  </div>
-                  <div class="carousel-item text-center index-page">
-                    <a href="classik.html"><img src="img/Classik/Classik3.JPG" class="d-block rounded w-100"
-                        alt="classik3"></a>
-                  </div>
-                  <div class="carousel-item text-center index-page">
-                    <a href="classik.html"><img src="img/Classik/Classik4.JPG" class="d-block rounded w-100"
-                        alt="classik4"></a>
-                  </div>
-                  <div class="carousel-item text-center index-page">
-                    <a href="classik.html"><img src="img/Classik/Classik5.JPG" class="d-block rounded w-100"
-                        alt="classik5"></a>
-                  </div>
-                  <div class="carousel-item text-center index-page">
-                    <a href="classik.html"><img src="img/Classik/Classik6.JPG" class="d-block rounded w-100"
-                        alt="classik6"></a>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Следующий</span>
-                </button>
-              </div>
-              <div class="product-details">
-                <h5><a href="classik.html">КЛАСИК</a></h5>
-                <p><a href="classik.html">
-                    Наша Класик уже покорила сотни детских сердец
-                  </a></p>
-                <div class="product-bottom-details d-flex justify-content-between">
-                  <div class="product-price container row">
-                    <h6>Доступные размеры и цены</h6>
-                    <div class="d-flex justify-content-between">
-                      <div><small>160см*80см</small></div>
-                      <div><strong>7800 грн</strong></div>
+            <div class="nav__menu-right">
+              <a target="_self" href="#popup" class="nav-link col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <i class="fas fa-shopping-cart">
+                </i>
+              </a>
+              <a class="nav-link col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" href="/index.html"
+                data-scroll="ua">UA</a>
+              <!-- modal Cart -->
+              <div id="popup" class="popup d-flex justify-content-center align-items-center">
+                <div class="popup-body">
+                  <div class="popup-content">
+                    <div class="popup-header bg-pink">
+                      <a target="_self" href="#header" class="popup-close">X</a>
+                      <div class="popup-title">Перейти к заказу:</div>
                     </div>
-                    <div class="d-flex justify-content-between">
-                      <div><small>190см*80см</small></div>
-                      <div><strong>8400 грн</strong></div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div><small>190см*90см</small></div>
-                      <div><strong>8800 грн</strong></div>
+                    <div class="popup-text">
+                      <a href="cart.html">Заказать Кроватку</a>
+                      <a href="cart_for_table_chair.html">Заказать Столик и Стульчик</a>
+                      <a href="cart_for_bl.html">Заказать Постельное Бельё</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="link-details d-flex justify-content-end">
-                <a href="classik.html">Детальнее здесь</a>
-              </div>
+              <!-- modal Cart -->
             </div>
-          </div>
-          <!-- bed model Classik -->
-
-          <!-- bed model Scandi -->
-          <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="product-card">
-              <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="5"
-                    aria-label="Slide 6"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item index-page active">
-                    <a href="scandi.html"><img src="img/Scandi/Scandi1.jpeg" class="d-block rounded w-100"
-                        alt="scandi1"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="scandi.html"><img src="img/Scandi/Scandi2.jpeg" class="d-block rounded w-100"
-                        alt="Scandi2"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="scandi.html"><img src="img/Scandi/Scandi3.jpeg" class="d-block rounded w-100"
-                        alt="scandi3"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="scandi.html"><img src="img/Scandi/Scandi4.jpeg" class="d-block rounded w-100"
-                        alt="scandi4"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="scandi.html"><img src="img/Scandi/Scandi5.jpeg" class="d-block rounded w-100"
-                        alt="scandi5"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="scandi.html"><img src="img/Scandi/Scandi6.jpeg" class="d-block rounded w-100"
-                        alt="scandi6"></a>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Следующий</span>
-                </button>
-              </div>
-              <div class="product-details">
-                <h5><a href="scandi.html">СКАНДИ</a></h5>
-                <p><a href="scandi.html">
-                    Кроватка Сканди от ChildWood, вне времени и будет актуальной всегда
-                  </a></p>
-                <div class="product-bottom-details d-flex justify-content-between">
-                  <div class="product-price container row">
-                    <h6>Доступные размеры и цены</h6>
-                    <div class="d-flex justify-content-between">
-                      <div><small>160см*80см</small></div>
-                      <div><strong>6300 грн</strong></div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div><small>190см*80см</small></div>
-                      <div><strong>7100 грн</strong></div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div><small>190см*90см</small></div>
-                      <div><strong>7600 грн</strong></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="link-details d-flex justify-content-end">
-                <a href="scandi.html">Детальнее здесь</a>
-              </div>
-            </div>
-          </div>
-          <!-- bed model Scandi -->
-
-          <!-- bed model Mishel -->
-          <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="product-card">
-              <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="5"
-                    aria-label="Slide 6"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item index-page active">
-                    <a href="mishel.html"><img src="img/Mishel/Mishel1.JPG" class="d-block rounded w-100"
-                        alt="mishel1"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="mishel.html"><img src="img/Mishel/Mishel2.JPG" class="d-block rounded w-100"
-                        alt="mishel2"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="mishel.html"><img src="img/Mishel/Mishel3.JPG" class="d-block rounded w-100"
-                        alt="mishel3"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="mishel.html"><img src="img/Mishel/Mishel4.JPG" class="d-block rounded w-100"
-                        alt="mishel4"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="mishel.html"><img src="img/Mishel/Mishel5.JPG" class="d-block rounded w-100"
-                        alt="mishel5"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="mishel.html"><img src="img/Mishel/Mishel6.JPG" class="d-block rounded w-100"
-                        alt="mishel6"></a>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Следующий</span>
-                </button>
-              </div>
-              <div class="product-details">
-                <h5><a href="mishel.html">МИШЕЛЬ</a></h5>
-                <p><a href="mishel.html">
-                    Наша обновленная Мишель - это нежность в каждой детали
-                  </a></p>
-                <div class="product-bottom-details d-flex justify-content-between">
-                  <div class="product-price container row">
-                    <h6>Доступные размеры и цены</h6>
-                    <div class="d-flex justify-content-between">
-                      <div><small>160см*80см</small></div>
-                      <div><strong>8400 грн</strong></div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div><small>190см*80см</small></div>
-                      <div><strong>9100 грн</strong></div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div><small>190см*90см</small></div>
-                      <div><strong>9500 грн</strong></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="link-details d-flex justify-content-end">
-                <a href="mishel.html">Детальнее здесь</a>
-              </div>
-            </div>
-          </div>
-          <!-- bed model Mishel -->
-
-          <!-- bed model Polli -->
-          <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="product-card">
-              <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="5"
-                    aria-label="Slide 6"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item index-page active">
-                    <a href="polli.html"><img src="img/Polli/Polli1.jpeg" class="d-block rounded w-100"
-                        alt="polli1"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="polli.html"><img src="img/Polli/Polli2.jpeg" class="d-block rounded w-100"
-                        alt="polli2"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="polli.html"><img src="img/Polli/Polli3.jpeg" class="d-block rounded w-100"
-                        alt="polli3"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="polli.html"><img src="img/Polli/Polli4.jpeg" class="d-block rounded w-100"
-                        alt="polli4"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="polli.html"><img src="img/Polli/Polli5.jpeg" class="d-block rounded w-100"
-                        alt="polli5"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="polli.html"><img src="img/Polli/Polli6.jpeg" class="d-block rounded w-100"
-                        alt="polli6"></a>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Следующий</span>
-                </button>
-              </div>
-              <div class="product-details">
-                <h5><a href="polli.html">ПОЛЛИ</a></h5>
-                <p><a href="polli.html">
-                    Кроватка Полли от ChildWood - это классические формы и стильный дизайн,
-                    который подойдет для каждой, с любовью оформленой, детской комнаты
-                  </a></p>
-                <div class="product-bottom-details d-flex justify-content-between">
-                  <div class="product-price container row">
-                    <h6>Доступные размеры и цены</h6>
-                    <div class="d-flex justify-content-between">
-                      <div><small>160см*80см</small></div>
-                      <div><strong>6300 грн</strong></div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div><small>190см*80см</small></div>
-                      <div><strong>7100 грн</strong></div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div><small>190см*90см</small></div>
-                      <div><strong>7600 грн</strong></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="link-details d-flex justify-content-end">
-                <a href="polli.html">Детальнее здесь</a>
-              </div>
-            </div>
-          </div>
-          <!-- bed model Polli -->
-
-          <!-- bed model House -->
-          <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="product-card">
-              <div id="carouselExampleIndicators4" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="5"
-                    aria-label="Slide 6"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item index-page active">
-                    <a href="house.html"><img src="img/House/House1.jpeg" class="d-block rounded w-100"
-                        alt="house1"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="house.html"><img src="img/House/House2.jpeg" class="d-block rounded w-100"
-                        alt="house2"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="house.html"><img src="img/House/House3.jpeg" class="d-block rounded w-100"
-                        alt="house3"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="house.html"><img src="img/House/House4.jpeg" class="d-block rounded w-100"
-                        alt="house4"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="house.html"><img src="img/House/House5.jpeg" class="d-block rounded w-100"
-                        alt="house5"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="house.html"><img src="img/House/House1.jpeg" class="d-block rounded w-100"
-                        alt="house6"></a>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Следующий</span>
-                </button>
-              </div>
-              <div class="product-details">
-                <h5><a href="house.html">ДОМИК</a></h5>
-                <p><a href="house.html">
-                    Домик от ChildWood, гармонично впишется в интерьеры
-                    разных стилей и придаст комнате привлекательности
-                  </a></p>
-                <div class="product-bottom-details d-flex justify-content-between">
-                  <div class="product-price container row">
-                    <h6>Доступные размеры и цены</h6>
-                    <div class="d-flex justify-content-between">
-                      <div><small>160см*80см</small></div>
-                      <div><strong>8100 грн</strong></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="link-details d-flex justify-content-end">
-                <a href="house.html">Детальнее здесь</a>
-              </div>
-            </div>
-          </div>
-          <!-- bed model House -->
-
-          <!-- bed model House mini -->
-          <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="product-card">
-              <div id="carouselExampleIndicators5" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="5"
-                    aria-label="Slide 6"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item index-page active">
-                    <a href="house_mini.html"><img src="img/House_mini/House_mini1.jpeg" class="d-block rounded w-100"
-                        alt="house-mini1"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="house_mini.html"><img src="img/House_mini/House_mini2.jpeg" class="d-block rounded w-100"
-                        alt="house-mini2"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="house_mini.html"><img src="img/House_mini/House_mini3.jpeg" class="d-block rounded w-100"
-                        alt="house-mini3"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="house_mini.html"><img src="img/House_mini/House_mini4.jpeg" class="d-block rounded w-100"
-                        alt="house-mini4"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="house_mini.html"><img src="img/House_mini/House_mini5.jpeg" class="d-block rounded w-100"
-                        alt="house-mini5"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="house_mini.html"><img src="img/House_mini/House_mini1.jpeg" class="d-block rounded w-100"
-                        alt="house-mini6"></a>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Следующий</span>
-                </button>
-              </div>
-              <div class="product-details">
-                <h5><a href="house_mini.html">ДОМИК МИНИ</a></h5>
-                <p><a href="house_mini.html">
-                    Наш Домик Мини, только без проэкции крыши
-                  </a></p>
-                <div class="product-bottom-details d-flex justify-content-between">
-                  <div class="product-price container row">
-                    <h6>Доступные размеры и цены</h6>
-                    <div class="d-flex justify-content-between">
-                      <div><small>160см*80см</small></div>
-                      <div><strong>6300 грн</strong></div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div><small>190см*80см</small></div>
-                      <div><strong>7100 грн</strong></div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div><small>190см*90см</small></div>
-                      <div><strong>7600 грн</strong></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="link-details d-flex justify-content-end">
-                <a href="house_mini.html">Детальнее здесь</a>
-              </div>
-            </div>
-          </div>
-          <!-- bed model House mini -->
-
-          <!-- model chair and table -->
-          <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="product-card">
-              <div id="carouselExampleIndicators5" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="5"
-                    aria-label="Slide 6"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item index-page active">
-                    <a href="ss.html"><img src="img/ss/ss1.jpg" class="d-block rounded w-100" alt="ss1"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="ss.html"><img src="img/ss/ss2.jpg" class="d-block rounded w-100" alt="ss2"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="ss.html"><img src="img/ss/ss3.jpg" class="d-block rounded w-100" alt="ss3"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="ss.html"><img src="img/ss/ss1.jpg" class="d-block rounded w-100" alt="ss4"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="ss.html"><img src="img/ss/ss2.jpg" class="d-block rounded w-100" alt="ss5"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="ss.html"><img src="img/ss/ss3.jpg" class="d-block rounded w-100" alt="ss6"></a>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Следующий</span>
-                </button>
-              </div>
-              <div class="product-details">
-                <h5><a href="ss.html">СТОЛ И СТУЛЬЧИК</a></h5>
-                <p><a href="ss.html">
-                    Детский Стол и Стульчик нужен для гармоничного развития вашего ребенка,
-                    поэтому всегда будет неотъемлемой частью каждой детской комнаты
-                  </a></p>
-                <div class="product-bottom-details d-flex justify-content-between">
-                  <div class="product-price container row">
-                    <h6>Доступные размеры и цены</h6>
-                    <div class="d-flex justify-content-between">
-                      <div><small>Стіл</small></div>
-                      <div><strong>1100 грн</strong></div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div><small>Стільчик</small></div>
-                      <div><strong>850 грн</strong></div>
-                    </div>
-                    <br>
-                  </div>
-                </div>
-              </div>
-              <div class="link-details d-flex justify-content-end">
-                <a href="ss.html">Детальнее здесь</a>
-              </div>
-            </div>
-          </div>
-          <!-- model chair and table -->
-
-          <!-- model bed linen -->
-          <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="product-card">
-              <div id="carouselExampleIndicators6" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="5"
-                    aria-label="Slide 6"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item index-page active">
-                    <a href="bed_linen.html"><img src="img/bed_linen/1.jpeg" class="d-block rounded w-100"
-                        alt="bl1"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="bed_linen.html"><img src="img/bed_linen/2.jpeg" class="d-block rounded w-100"
-                        alt="bl2"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="bed_linen.html"><img src="img/bed_linen/3.jpeg" class="d-block rounded w-100"
-                        alt="bl3"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="bed_linen.html"><img src="img/bed_linen/4.jpeg" class="d-block rounded w-100"
-                        alt="bl4"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="bed_linen.html"><img src="img/bed_linen/5.jpeg" class="d-block rounded w-100"
-                        alt="bl5"></a>
-                  </div>
-                  <div class="carousel-item index-page">
-                    <a href="bed_linen.html"><img src="img/bed_linen/6.jpeg" class="d-block rounded w-100"
-                        alt="bl6"></a>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators6"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators6"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Следующий</span>
-                </button>
-              </div>
-              <div class="product-details">
-                <h5><a href="bed_linen.html">ПОСТЕЛЬНОЕ БЕЛЬЁ</a></h5>
-                <p><a href="bed_linen.html">
-                    Муслиновые (натуральные) комплекты постельного белья от ChildWood, дарят прохладу в летнюю жару,
-                    и согревают в осенне-зимний период
-                  </a></p>
-                <div class="product-bottom-details d-flex justify-content-between">
-                  <div class="product-price container row">
-                    <h6>Доступные размеры и цены</h6>
-                    <div class="d-flex justify-content-between">
-                      <div><small>160*100</small></div>
-                      <div><strong>1600 грн</strong></div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div><small>190*110</small></div>
-                      <div><strong>1750 грн</strong></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="link-details d-flex justify-content-end">
-                <a href="bed_linen.html">Детальнее здесь</a>
-              </div>
-            </div>
-          </div>
-          <!-- model bed linen -->
+          </nav>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- footer  -->
-  <footer class="bg-pink">
-    <section class="footer">
+
+    <!-- section for content -->
+    <section class="bg-light">
+      <div class="content-section">
+        <!-- photo for page logo cover -->
+        <div class="pages-cover text-center">
+          <img src="img/logo1.jpg" class="rounded" alt="foto-logo">
+          <h3>Семейная мастерская детской мебели из МАСИВА ДУБА</h3>
+        </div>
+        <!-- catalog production -->
+        <div class="container" id="catalog">
+          <div class="row">
+
+            <!-- bed model Classik -->
+            <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="product-card">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                      aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                      aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                      aria-label="Slide 6"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item text-center index-page active">
+                      <a href="classik.html"><img src="img/Classik/Classik1.JPG" class="d-block rounded w-100"
+                          alt="classik1"></a>
+                    </div>
+                    <div class="carousel-item text-center index-page">
+                      <a href="classik.html"><img src="img/Classik/Classik2.JPG" class="d-block rounded w-100"
+                          alt="classik2"></a>
+                    </div>
+                    <div class="carousel-item text-center index-page">
+                      <a href="classik.html"><img src="img/Classik/Classik3.JPG" class="d-block rounded w-100"
+                          alt="classik3"></a>
+                    </div>
+                    <div class="carousel-item text-center index-page">
+                      <a href="classik.html"><img src="img/Classik/Classik4.JPG" class="d-block rounded w-100"
+                          alt="classik4"></a>
+                    </div>
+                    <div class="carousel-item text-center index-page">
+                      <a href="classik.html"><img src="img/Classik/Classik5.JPG" class="d-block rounded w-100"
+                          alt="classik5"></a>
+                    </div>
+                    <div class="carousel-item text-center index-page">
+                      <a href="classik.html"><img src="img/Classik/Classik6.JPG" class="d-block rounded w-100"
+                          alt="classik6"></a>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                </div>
+                <div class="product-details">
+                  <h5><a href="classik.html">КЛАСИК</a></h5>
+                  <p><a href="classik.html">
+                      Наша Класик уже покорила сотни детских сердец
+                    </a></p>
+                  <div class="product-bottom-details d-flex justify-content-between">
+                    <div class="product-price container row">
+                      <h6>Доступные размеры и цены</h6>
+                      <div class="d-flex justify-content-between">
+                        <div><small>160см*80см</small></div>
+                        <div><strong>7800 грн</strong></div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div><small>190см*80см</small></div>
+                        <div><strong>8400 грн</strong></div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div><small>190см*90см</small></div>
+                        <div><strong>8800 грн</strong></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="link-details d-flex justify-content-end">
+                  <a href="classik.html">Детальнее здесь</a>
+                </div>
+              </div>
+            </div>
+            <!-- bed model Classik -->
+
+            <!-- bed model Scandi -->
+            <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="product-card">
+                <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3"
+                      aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="4"
+                      aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="5"
+                      aria-label="Slide 6"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item index-page active">
+                      <a href="scandi.html"><img src="img/Scandi/Scandi1.jpeg" class="d-block rounded w-100"
+                          alt="scandi1"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="scandi.html"><img src="img/Scandi/Scandi2.jpeg" class="d-block rounded w-100"
+                          alt="Scandi2"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="scandi.html"><img src="img/Scandi/Scandi3.jpeg" class="d-block rounded w-100"
+                          alt="scandi3"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="scandi.html"><img src="img/Scandi/Scandi4.jpeg" class="d-block rounded w-100"
+                          alt="scandi4"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="scandi.html"><img src="img/Scandi/Scandi5.jpeg" class="d-block rounded w-100"
+                          alt="scandi5"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="scandi.html"><img src="img/Scandi/Scandi6.jpeg" class="d-block rounded w-100"
+                          alt="scandi6"></a>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                </div>
+                <div class="product-details">
+                  <h5><a href="scandi.html">СКАНДИ</a></h5>
+                  <p><a href="scandi.html">
+                      Кроватка Сканди от ChildWood, вне времени и будет актуальной всегда
+                    </a></p>
+                  <div class="product-bottom-details d-flex justify-content-between">
+                    <div class="product-price container row">
+                      <h6>Доступные размеры и цены</h6>
+                      <div class="d-flex justify-content-between">
+                        <div><small>160см*80см</small></div>
+                        <div><strong>6300 грн</strong></div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div><small>190см*80см</small></div>
+                        <div><strong>7100 грн</strong></div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div><small>190см*90см</small></div>
+                        <div><strong>7600 грн</strong></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="link-details d-flex justify-content-end">
+                  <a href="scandi.html">Детальнее здесь</a>
+                </div>
+              </div>
+            </div>
+            <!-- bed model Scandi -->
+
+            <!-- bed model Mishel -->
+            <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="product-card">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3"
+                      aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4"
+                      aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="5"
+                      aria-label="Slide 6"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item index-page active">
+                      <a href="mishel.html"><img src="img/Mishel/Mishel1.JPG" class="d-block rounded w-100"
+                          alt="mishel1"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="mishel.html"><img src="img/Mishel/Mishel2.JPG" class="d-block rounded w-100"
+                          alt="mishel2"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="mishel.html"><img src="img/Mishel/Mishel3.JPG" class="d-block rounded w-100"
+                          alt="mishel3"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="mishel.html"><img src="img/Mishel/Mishel4.JPG" class="d-block rounded w-100"
+                          alt="mishel4"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="mishel.html"><img src="img/Mishel/Mishel5.JPG" class="d-block rounded w-100"
+                          alt="mishel5"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="mishel.html"><img src="img/Mishel/Mishel6.JPG" class="d-block rounded w-100"
+                          alt="mishel6"></a>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                </div>
+                <div class="product-details">
+                  <h5><a href="mishel.html">МИШЕЛЬ</a></h5>
+                  <p><a href="mishel.html">
+                      Наша обновленная Мишель - это нежность в каждой детали
+                    </a></p>
+                  <div class="product-bottom-details d-flex justify-content-between">
+                    <div class="product-price container row">
+                      <h6>Доступные размеры и цены</h6>
+                      <div class="d-flex justify-content-between">
+                        <div><small>160см*80см</small></div>
+                        <div><strong>8400 грн</strong></div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div><small>190см*80см</small></div>
+                        <div><strong>9100 грн</strong></div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div><small>190см*90см</small></div>
+                        <div><strong>9500 грн</strong></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="link-details d-flex justify-content-end">
+                  <a href="mishel.html">Детальнее здесь</a>
+                </div>
+              </div>
+            </div>
+            <!-- bed model Mishel -->
+
+            <!-- bed model Polli -->
+            <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="product-card">
+                <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="3"
+                      aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="4"
+                      aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="5"
+                      aria-label="Slide 6"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item index-page active">
+                      <a href="polli.html"><img src="img/Polli/Polli1.jpeg" class="d-block rounded w-100"
+                          alt="polli1"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="polli.html"><img src="img/Polli/Polli2.jpeg" class="d-block rounded w-100"
+                          alt="polli2"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="polli.html"><img src="img/Polli/Polli3.jpeg" class="d-block rounded w-100"
+                          alt="polli3"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="polli.html"><img src="img/Polli/Polli4.jpeg" class="d-block rounded w-100"
+                          alt="polli4"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="polli.html"><img src="img/Polli/Polli5.jpeg" class="d-block rounded w-100"
+                          alt="polli5"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="polli.html"><img src="img/Polli/Polli6.jpeg" class="d-block rounded w-100"
+                          alt="polli6"></a>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                </div>
+                <div class="product-details">
+                  <h5><a href="polli.html">ПОЛЛИ</a></h5>
+                  <p><a href="polli.html">
+                      Кроватка Полли от ChildWood - это классические формы и стильный дизайн,
+                      который подойдет для каждой, с любовью оформленой, детской комнаты
+                    </a></p>
+                  <div class="product-bottom-details d-flex justify-content-between">
+                    <div class="product-price container row">
+                      <h6>Доступные размеры и цены</h6>
+                      <div class="d-flex justify-content-between">
+                        <div><small>160см*80см</small></div>
+                        <div><strong>6300 грн</strong></div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div><small>190см*80см</small></div>
+                        <div><strong>7100 грн</strong></div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div><small>190см*90см</small></div>
+                        <div><strong>7600 грн</strong></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="link-details d-flex justify-content-end">
+                  <a href="polli.html">Детальнее здесь</a>
+                </div>
+              </div>
+            </div>
+            <!-- bed model Polli -->
+
+            <!-- bed model House -->
+            <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="product-card">
+                <div id="carouselExampleIndicators4" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="3"
+                      aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="4"
+                      aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="5"
+                      aria-label="Slide 6"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item index-page active">
+                      <a href="house.html"><img src="img/House/House1.jpeg" class="d-block rounded w-100"
+                          alt="house1"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="house.html"><img src="img/House/House2.jpeg" class="d-block rounded w-100"
+                          alt="house2"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="house.html"><img src="img/House/House3.jpeg" class="d-block rounded w-100"
+                          alt="house3"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="house.html"><img src="img/House/House4.jpeg" class="d-block rounded w-100"
+                          alt="house4"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="house.html"><img src="img/House/House5.jpeg" class="d-block rounded w-100"
+                          alt="house5"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="house.html"><img src="img/House/House1.jpeg" class="d-block rounded w-100"
+                          alt="house6"></a>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                </div>
+                <div class="product-details">
+                  <h5><a href="house.html">ДОМИК</a></h5>
+                  <p><a href="house.html">
+                      Домик от ChildWood, гармонично впишется в интерьеры
+                      разных стилей и придаст комнате привлекательности
+                    </a></p>
+                  <div class="product-bottom-details d-flex justify-content-between">
+                    <div class="product-price container row">
+                      <h6>Доступные размеры и цены</h6>
+                      <div class="d-flex justify-content-between">
+                        <div><small>160см*80см</small></div>
+                        <div><strong>8100 грн</strong></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="link-details d-flex justify-content-end">
+                  <a href="house.html">Детальнее здесь</a>
+                </div>
+              </div>
+            </div>
+            <!-- bed model House -->
+
+            <!-- bed model House mini -->
+            <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="product-card">
+                <div id="carouselExampleIndicators5" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="3"
+                      aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="4"
+                      aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="5"
+                      aria-label="Slide 6"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item index-page active">
+                      <a href="house_mini.html"><img src="img/House_mini/House_mini1.jpeg" class="d-block rounded w-100"
+                          alt="house-mini1"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="house_mini.html"><img src="img/House_mini/House_mini2.jpeg" class="d-block rounded w-100"
+                          alt="house-mini2"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="house_mini.html"><img src="img/House_mini/House_mini3.jpeg" class="d-block rounded w-100"
+                          alt="house-mini3"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="house_mini.html"><img src="img/House_mini/House_mini4.jpeg" class="d-block rounded w-100"
+                          alt="house-mini4"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="house_mini.html"><img src="img/House_mini/House_mini5.jpeg" class="d-block rounded w-100"
+                          alt="house-mini5"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="house_mini.html"><img src="img/House_mini/House_mini1.jpeg" class="d-block rounded w-100"
+                          alt="house-mini6"></a>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                </div>
+                <div class="product-details">
+                  <h5><a href="house_mini.html">ДОМИК МИНИ</a></h5>
+                  <p><a href="house_mini.html">
+                      Наш Домик Мини, только без проэкции крыши
+                    </a></p>
+                  <div class="product-bottom-details d-flex justify-content-between">
+                    <div class="product-price container row">
+                      <h6>Доступные размеры и цены</h6>
+                      <div class="d-flex justify-content-between">
+                        <div><small>160см*80см</small></div>
+                        <div><strong>6300 грн</strong></div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div><small>190см*80см</small></div>
+                        <div><strong>7100 грн</strong></div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div><small>190см*90см</small></div>
+                        <div><strong>7600 грн</strong></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="link-details d-flex justify-content-end">
+                  <a href="house_mini.html">Детальнее здесь</a>
+                </div>
+              </div>
+            </div>
+            <!-- bed model House mini -->
+
+            <!-- model chair and table -->
+            <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="product-card">
+                <div id="carouselExampleIndicators5" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="3"
+                      aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="4"
+                      aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="5"
+                      aria-label="Slide 6"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item index-page active">
+                      <a href="ss.html"><img src="img/ss/ss1.jpg" class="d-block rounded w-100" alt="ss1"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="ss.html"><img src="img/ss/ss2.jpg" class="d-block rounded w-100" alt="ss2"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="ss.html"><img src="img/ss/ss3.jpg" class="d-block rounded w-100" alt="ss3"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="ss.html"><img src="img/ss/ss1.jpg" class="d-block rounded w-100" alt="ss4"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="ss.html"><img src="img/ss/ss2.jpg" class="d-block rounded w-100" alt="ss5"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="ss.html"><img src="img/ss/ss3.jpg" class="d-block rounded w-100" alt="ss6"></a>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                </div>
+                <div class="product-details">
+                  <h5><a href="ss.html">СТОЛ И СТУЛЬЧИК</a></h5>
+                  <p><a href="ss.html">
+                      Детский Стол и Стульчик нужен для гармоничного развития вашего ребенка,
+                      поэтому всегда будет неотъемлемой частью каждой детской комнаты
+                    </a></p>
+                  <div class="product-bottom-details d-flex justify-content-between">
+                    <div class="product-price container row">
+                      <h6>Доступные размеры и цены</h6>
+                      <div class="d-flex justify-content-between">
+                        <div><small>Стіл</small></div>
+                        <div><strong>1100 грн</strong></div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div><small>Стільчик</small></div>
+                        <div><strong>850 грн</strong></div>
+                      </div>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+                <div class="link-details d-flex justify-content-end">
+                  <a href="ss.html">Детальнее здесь</a>
+                </div>
+              </div>
+            </div>
+            <!-- model chair and table -->
+
+            <!-- model bed linen -->
+            <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="product-card">
+                <div id="carouselExampleIndicators6" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="3"
+                      aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="4"
+                      aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="5"
+                      aria-label="Slide 6"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item index-page active">
+                      <a href="bed_linen.html"><img src="img/bed_linen/1.jpeg" class="d-block rounded w-100"
+                          alt="bl1"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="bed_linen.html"><img src="img/bed_linen/2.jpeg" class="d-block rounded w-100"
+                          alt="bl2"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="bed_linen.html"><img src="img/bed_linen/3.jpeg" class="d-block rounded w-100"
+                          alt="bl3"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="bed_linen.html"><img src="img/bed_linen/4.jpeg" class="d-block rounded w-100"
+                          alt="bl4"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="bed_linen.html"><img src="img/bed_linen/5.jpeg" class="d-block rounded w-100"
+                          alt="bl5"></a>
+                    </div>
+                    <div class="carousel-item index-page">
+                      <a href="bed_linen.html"><img src="img/bed_linen/6.jpeg" class="d-block rounded w-100"
+                          alt="bl6"></a>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators6"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators6"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                  </button>
+                </div>
+                <div class="product-details">
+                  <h5><a href="bed_linen.html">ПОСТЕЛЬНОЕ БЕЛЬЁ</a></h5>
+                  <p><a href="bed_linen.html">
+                      Муслиновые (натуральные) комплекты постельного белья от ChildWood, дарят прохладу в летнюю жару,
+                      и согревают в осенне-зимний период
+                    </a></p>
+                  <div class="product-bottom-details d-flex justify-content-between">
+                    <div class="product-price container row">
+                      <h6>Доступные размеры и цены</h6>
+                      <div class="d-flex justify-content-between">
+                        <div><small>160*100</small></div>
+                        <div><strong>1600 грн</strong></div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div><small>190*110</small></div>
+                        <div><strong>1750 грн</strong></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="link-details d-flex justify-content-end">
+                  <a href="bed_linen.html">Детальнее здесь</a>
+                </div>
+              </div>
+            </div>
+            <!-- model bed linen -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="footer">
       <div class="container">
-        <div class="row">
+        <div class="">
           <div class="col-md-4 col-6">
             <h4>ИНФОРМАЦИЯ</h4>
             <ul class="list-unstyled">
@@ -777,13 +771,11 @@
           </div>
         </div>
       </div>
-    </section>
-  </footer>
+    </footer>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-    crossorigin="anonymous"></script>
+  <script src="/script.js"></script>
 </body>
 
 </html>
