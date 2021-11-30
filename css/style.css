@@ -30,7 +30,7 @@ body._lock {
     align-items: center;
 }
 .container {
-    margin: 0px auto;
+    margin: 0px;
     padding: 0px;
     min-width: 0;
     display: flex;
@@ -447,61 +447,53 @@ body._lock {
     background-color: #fff;
     position: relative;
     text-align: center;
-    margin: 0 10px 50px 10px;
+    margin: 0 0 50px 0;
 }
 @media (max-width: 1200px) {
     .logo__page {
-        background-color: #fff;
-        margin: 50px 10px 50px 10px;
+        margin: 50px 0 50px 0;
         max-width: 992px;
     }
 }
 @media (max-width: 998px) {
     .logo__page {
-        background-color: #fff;
-        margin: 50px 10px 50px 10px;
+        margin: 50px 0 50px 0;
         max-width: 888px;
     }
 }
 @media (max-width: 890px) {
     .logo__page {
-        background-color: #fff;
-        margin: 25px 10px 50px 10px;
+        margin: 25px 0 50px 0;
         max-width: 788px;
     }
 }
 @media (max-width: 790px) {
     .logo__page {
-        background-color: #fff;
-        margin: 50px 10px 50px 10px;
+        margin: 50px 0 50px 0;
         max-width: 688px;
     }
 }
 @media (max-width: 690px) {
     .logo__page {
-        background-color: #fff;
-        margin: 75px 10px 50px 10px;
+        margin: 75px 0 50px 0;
         max-width: 588px;
     }
 }
 @media (max-width: 590px) {
     .logo__page {
-        background-color: #fff;
-        margin: 100px 10px 50px 10px;
+        margin: 100px 0 50px 0;
         max-width: 488px;
     }
 }
 @media (max-width: 490px) {
     .logo__page {
-        background-color: #fff;
-        margin: 125px 10px 50px 10px;
+        margin: 125px 0 50px 0;
         max-width: 388px;
     }
 }
 @media (max-width: 390px) {
     .logo__page {
-        background-color: #fff;
-        margin: 150px 10px 50px 10px;
+        margin: 150px 0 50px 0;
         max-width: none;
     }
 }
@@ -513,8 +505,6 @@ body._lock {
     font-family: "Jost", sans-serif;
     position: absolute;
     font-size: 3.5vw;
-    text-align: center;
-    padding: 20px 5px 0 5px;
     bottom: 10%;
     right: 50%;
     left: 0;
@@ -580,7 +570,6 @@ body._lock {
     margin: -20px 0 0 0;
     z-index: 10;
     font-size: 0;
-    color: ;
     width: 25px;
     height: 40px;
 }
