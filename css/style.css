@@ -1024,7 +1024,7 @@ body._lock {
 }
 /* paid-and-delivery page */
 /* card model pages */
-.bed-linen-card {
+.card__model {
     width: 100%;
     background-color: #fff;
     display: flex;
