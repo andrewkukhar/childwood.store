@@ -576,11 +576,11 @@ body._lock {
 }
 .slider .slick-arrow.slick-prev {
     left: 10%;
-    background: url('../img/left-icon.png') 0 0 / 100% no-repeat;
+    background: url("../img/left-icon.png") 0 0 / 100% no-repeat;
 }
 .slider .slick-arrow.slick-next {
     right: 10%;
-    background: url('../img/right-icon.png') 0 0 / 100% no-repeat;
+    background: url("../img/right-icon.png") 0 0 / 100% no-repeat;
 }
 /* slider */
 /* product card */
@@ -729,14 +729,13 @@ body._lock {
 .footer__body h4 {
     font-weight: 500;
     font-family: "Jost", sans-serif;
-
 }
 @media (min-width: 414px) {
     .footer__body {
         display: flex;
         flex-direction: row;
-        align-items: stretch;
         flex-wrap: wrap;
+        align-items: baseline;
         justify-content: center;
     }
 }
@@ -744,7 +743,7 @@ body._lock {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin: 10px 30px;
     text-align: start;
     max-width: 250px;
@@ -753,7 +752,7 @@ body._lock {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin: 10px 30px;
     text-align: start;
     max-width: 250px;
@@ -762,7 +761,7 @@ body._lock {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin: 10px 30px;
     text-align: start;
     max-width: 250px;
@@ -898,7 +897,7 @@ body._lock {
 .form-input._error {
     box-shadow: 0 0 15px #ff0000;
 }
-textarea.form-input {
+.textarea.form-input {
     min-height: 120px;
     resize: vertical;
     padding: 20px;
@@ -929,89 +928,165 @@ textarea.form-input {
 .form-button:active {
     top: 3px;
 }
-/* for other pages */
-.logo-cover-mini img {
-    width: auto;
-    height: 250px;
-}
-.logo-cover-mini h3 {
+/* order (forms) pages */
+/* contakts page */
+.contakt__page-content {
     width: 100%;
-    height: auto;
-    font-size: 10px;
-    padding: 15px 5px 0 5px;
-}
-.logo-cover-mini-propcard img {
-    width: auto;
-    height: 150px;
-}
-.logo-cover-mini-propcard h3 {
-    width: 100%;
-    height: auto;
-    font-size: 5px;
-    padding: 10px 5px 0 5px;
-}
-.page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
     font-family: "Jost", sans-serif;
     color: black;
 }
-.page-content a {
+.contakt__page-content p {
+    max-width: 100%;
+    font-size: 4.5vw;
+    padding: 10px 20px;
+}
+@media (min-width: 500px) {
+    .contakt__page-content p {
+        font-size: 24px;
+        padding: 10px 30px;
+    }
+}
+.contakt__page-content a {
     color: black;
     text-decoration: none;
 }
-.page-content a:hover {
+.contakt__page-content a:hover {
     color: rgb(109, 111, 114);
 }
-.text-paid-delivery {
-    max-width: 400px;
-    margin: 20px 20px;
+.contakt__page-content i {
+    padding: 10px 10px;
+    color: black;
+    text-decoration: none;
 }
-.text-paid-delivery p {
-    padding: 5px 5px 5px 5px;
+.contakt__page-content i:hover {
+    color: rgb(109, 111, 114);
 }
-.text-paid-delivery h3 {
-    padding: 15px 5px 15px 5px;
-}
-.bed-linen-ordered {
-    visibility: hidden;
-    height: 1px;
-}
-/* for other pages */
-/* card model pages */
-.card-model {
+/* contakts page */
+/* paid-and-delivery page */
+.paid-and-delivery__page-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
     font-family: "Jost", sans-serif;
-    color: #000;
-    margin: 10px 5px 10px 5px;
+    color: black;
 }
-.photo-card-model {
+.paid-and-delivery__page-content p {
+    max-width: 100%;
+    font-size: 4.5vw;
+    padding: 10px 20px;
+}
+@media (min-width: 500px) {
+    .paid-and-delivery__page-content p {
+        font-size: 22px;
+        padding: 10px 30px;
+    }
+}
+.paid-and-delivery__page-content a {
+    color: black;
+    text-decoration: none;
+}
+.paid-and-delivery__page-content a:hover {
+    color: rgb(109, 111, 114);
+}
+.fa-viber {
+    color: #665cac;
+}
+.fa-telegram {
+    color: #0088cc;
+}
+.fa-whatsapp-square {
+    color: #25d366;
+}
+.paid-and-delivery__page-content i {
+    font-size: 5vw;
+    padding: 5px 7px;
+}
+@media (min-width: 500px) {
+    .paid-and-delivery__page-content i {
+        font-size: 22px;
+        padding: 7px 10px;
+    }
+}
+.tel__icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* paid-and-delivery page */
+/* card model pages */
+.bed-linen-card {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 137px 0 0 0;
+}
+.photo__card-model {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 0;
+    max-width: 450px;
     padding: 10px 10px;
 }
-.subscribe-card-model {
-    padding: 30px 10px;
+.subscribe__card-model {
+    width: 100%;
+    max-width: 450px;
 }
 .card-model-text {
-    margin: 50px 20px 50px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
 }
 .card-model-text p {
+    padding: 10px 10px;
     font-family: "Jost", sans-serif;
     color: #000;
 }
-.card-model-text h5 {
+.card-model-text h4 {
+    padding: 10px 10px;
     font-family: "Jost", sans-serif;
     color: #000;
 }
-.card-model-text h6 {
-    font-family: "Jost", sans-serif;
-    color: #000;
+.size__price-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.card-model-text small {
-    font-family: "Jost", sans-serif;
-    color: #000;
+.size__price {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
 }
-.card-model-text strong {
-    font-family: "Jost", sans-serif;
-    color: #000;
+.size__price small {
+    padding: 10px 10px;
 }
-.last-price {
+.size__price strong {
+    padding: 10px 10px;
+}
+.last__price {
     padding-bottom: 15px;
 }
 .card-model-text a {
@@ -1031,39 +1106,32 @@ textarea.form-input {
 .card-model-text i:hover {
     color: rgb(109, 111, 114);
 }
-.button-for-order {
-    position: relative;
+.button__order {
+    width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-self: center;
     align-items: center;
-    font-size: 24px;
+    text-align: center;
+    font-size: 20px;
     font-weight: 600;
     text-decoration: none;
     font-family: "Jost", sans-serif;
     margin: 20px 50px 70px 50px;
-    padding: 10px 20px;
 }
-.button-for-order a {
-    margin: 10px 0;
-    padding: 10px 10px;
-    position: absolute;
-    left: 15%;
-    top: 30px;
-    right: 15%;
-    bottom: 20px;
-    min-height: 60px;
+.button__order a {
+    text-align: center;
+    max-width: 250px;
+    padding: 10px 20px;
+    min-height: 35px;
     background-color: hsla(141, 28%, 88%, 0.897);
     color: rgb(67, 67, 73);
     text-transform: uppercase;
     letter-spacing: 3px;
     border-radius: 20px;
-    transition: background-color 0, 5s ease 0s;
-    object-fit: cover;
+    transition: all 0, 5s ease 0s;
     text-decoration: none;
 }
-.button-for-order a:hover {
+.button__order a:hover {
     color: rgb(109, 111, 114);
     background-color: hsla(143, 35%, 79%, 0.897);
 }
