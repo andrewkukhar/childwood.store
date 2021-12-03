@@ -827,102 +827,129 @@ body._lock {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 137px 0 0 0;
+    margin-top: 137px;
+    margin-bottom: 40px;
 }
-.btn {
-    margin: 5px 10px 10px 5px;
-}
-.form {
-    color: #000;
-    font-family: "Jost", sans-serif;
-    margin: 20px 0;
-}
-.form-body {
+.form__body {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 300px;
 }
-/* .form-body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(3, 2, 2, 0.384) url("../img/loading.gif") center / 50px no-repeat;
-    opacity: 0;
+@media (min-width: 414px) {
+    .form__body {
+        width: 100%;
+        max-width: 420px;
+    }
+}
+.bed-linen-ordered {
     visibility: hidden;
-    transition: all 0, 5s ease 0s;
+    height: 1px;
 }
-.form-body._sending::after {
-    opacity: 1;
-    visibility: visible;
-} */
-.form * {
-    outline: none;
+.form__title {
+    text-align: center;
 }
-.form-title {
-    font-size: 30px;
-    font-weight: 400;
+.form__title h3 {
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: 700;
 }
-.form-item {
-    margin: 10px 5px 20px 5px;
+@media (min-width: 414px) {
+    .form-title h3 {
+        font-size: 21px;
+    }
 }
-.form-item select {
-    width: 400px;
-    padding: 0 20px;
-}
-.form-item input {
-    max-width: 400px;
-    padding: 0 20px;
+@media (min-width: 544px) {
+    .form-title h3 {
+        font-size: 24px;
+    }
 }
 .form-label {
-    font-size: 24px;
-    padding: 0 20px;
-    display: block;
+    width: 100%;
 }
-.form-input {
-    height: 50px;
-    padding: 0 20px;
-    border-radius: 1px;
-    width: 60%;
+.form__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.form__item select {
+    width: 100%;
+    color: #000;
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    background-color: rgba(236, 236, 236, 0.829);
+    border-radius: 10px;
+    border: 1px solid rgb(173, 173, 173);
+    padding: 10px 10px;
+}
+.form__item > option {
+    width: 100%;
+    color: #000;
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    border: 1px solid rgb(173, 173, 173);
+    background-color: rgba(152, 226, 186, 0.829);
+}
+.form__item input {
+    width: 93%;
+    color: #000;
+    font-family: "Jost", sans-serif;
     font-size: 18px;
-    transition: all 0, 5s ease 0s;
+    border-radius: 10px;
+    border: 1px solid rgb(173, 173, 173);
+    background-color: rgba(236, 236, 236, 0.829);
+    padding: 10px 10px;
 }
-.form-input:focus {
-    box-shadow: 0 0 15px rgb(250, 212, 217);
+.form__item label {
+    width: 100%;
+    color: #000;
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 10px;
 }
-.form-input._error {
-    box-shadow: 0 0 15px #ff0000;
-}
-.textarea.form-input {
+.form__item textarea {
+    width: 93%;
+    color: #000;
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgb(173, 173, 173);
+    background-color: rgba(236, 236, 236, 0.829);
     min-height: 120px;
     resize: vertical;
-    padding: 20px;
-    width: 400px;
+    padding: 10px 10px;
 }
-.form-button {
-    width: 250px;
+.form__button {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     min-height: 60px;
     background-color: rgb(250, 212, 217);
     color: #fff;
+    font-family: "Jost", sans-serif;
     font-size: 18px;
+    text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-weight: 700;
     border-radius: 20px;
-    transition: background-color 0, 5s ease 0s;
-    position: relative;
-    top: 0;
+    border: 1px solid rgb(197, 153, 159);
+    transition: all 0.5s ease 0s;
     object-fit: cover;
+    margin-top: 20px;
 }
-.form-button:hover {
+.form__button:hover {
     background-color: rgb(238, 181, 188);
-}
-.form-button:active {
-    top: 3px;
 }
 /* order (forms) pages */
 /* contakts page */
