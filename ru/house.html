@@ -5,10 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="/css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,34 +16,31 @@
 </head>
 
 <body>
-  <!-- header -->
-  <header id="header">
-    <div class="container-fluid header">
-      <div class="row">
-        <nav class="navbar navbar-nav nav-flex-icons fixed-top navbar-light bg-pink">
-          <div class="navbar-main d-flex justify-content-center align-items-center">
-            <a class="nav-link nav-once-menu col-3 col-xs-3 col-sm-3 col-md-4 col-lg-4 col-xl-6 active"
-              aria-current="page" target="_self" href="index.html">ГЛАВНАЯ</a>
-            <a class="nav-link col-3  col-xs-3 col-sm-3 col-md-4 col-lg-4 col-xl-6" href="index.html#catalog"
-              data-scroll="catalog">КАТАЛОГ</a>
-            <a class="nav-link col-3 col-xs-3 col-sm-3 col-md-4 col-lg-4 col-xl-6" href="about_us.html"
-              data-scroll="news">О НАС</a>
-            <a class="nav-link col-3 col-xs-3 col-sm-4 col-md-6 col-lg-6 col-xl-12" href="paid_delivery.html"
-              data-scroll="news">ДОСТАВКА</a>
+  <div class="wraper">
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <nav class="menu__body">
+          <div class="nav__menu">
+            <a class="menu__link" href="index.html">ГЛАВНАЯ</a>
+            <a class="menu__link" href="index.html#catalog">КАТАЛОГ</a>
+            <a class="menu__link" href="about_us.html">О НАС</a>
+            <a class="menu__link" href="paid_delivery.html">ДОСТАВКА</a>
           </div>
-          <div class="navbar-main-right d-flex justify-content-center align-items-center">
-            <a target="_self" href="#popup" class="nav-link col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <i class="fas fa-shopping-cart">
-              </i>
-            </a>
-            <a class="nav-link col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" href="/house.html"
-              data-scroll="ua">UA</a>
+          <div class="nav__menu-right">
+            <div class="nav__mune-icons">
+              <a href="https://www.instagram.com/childwood_ua/"><i class="fab fa-instagram"></i></a>
+              <a href="#popup" class="menu__link">
+                <i class="fas fa-shopping-cart"></i></a>
+              <a class="menu__link" href="/house.html">UA</a>
+            </div>
             <!-- modal Cart -->
-            <div id="popup" class="popup d-flex justify-content-center align-items-center">
-              <div class="popup-body">
+            <div id="popup" class="popup">
+              <a class="popup__body-body" href="#header"></a>
+              <div class="popup-body container">
                 <div class="popup-content">
-                  <div class="popup-header bg-pink">
-                    <a target="_self" href="#header" class="popup-close">X</a>
+                  <div class="popup-header">
+                    <a href="#header" class="popup-close">X</a>
                     <div class="popup-title">Перейти к заказу:</div>
                   </div>
                   <div class="popup-text">
@@ -61,169 +55,141 @@
           </div>
         </nav>
       </div>
-    </div>
-  </header>
-
-  <!-- section for content -->
-  <section class="bg-light">
-    <div class="content-section">
-      <div class="container">
-        <div class="row">
-          <div class="photo-card-model col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-            <div id="carouselExampleIndicators1" class="carousel slide " data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active"
-                  aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
-                  aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
-                  aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3"
-                  aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="4"
-                  aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="5"
-                  aria-label="Slide 6"></button>
+    </header>
+    <!-- section for content -->
+    <section class="card__model">
+      <div class="photo__card-model">
+        <!-- slider -->
+        <div class="flex">
+          <div class="flex__column">
+            <div class="slider">
+              <div class="slider__item">
+                <img src="img/house/House1.jpeg" alt="house1">
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item index-page active">
-                  <a href="#"><img src="img/House/House1.jpeg" class="d-block rounded w-100" alt="house1"></a>
-                </div>
-                <div class="carousel-item index-page">
-                  <a href="#"><img src="img/House/House2.jpeg" class="d-block rounded w-100" alt="house2"></a>
-                </div>
-                <div class="carousel-item index-page">
-                  <a href="#"><img src="img/House/House3.jpeg" class="d-block rounded w-100" alt="house3"></a>
-                </div>
-                <div class="carousel-item index-page">
-                  <a href="#"><img src="img/House/House4.jpeg" class="d-block rounded w-100" alt="house4"></a>
-                </div>
-                <div class="carousel-item index-page">
-                  <a href="#"><img src="img/House/House5.jpeg" class="d-block rounded w-100" alt="house5"></a>
-                </div>
-                <div class="carousel-item index-page">
-                  <a href="#"><img src="img/House/House1.jpeg" class="d-block rounded w-100" alt="house6"></a>
-                </div>
+              <div class="slider__item">
+                <img src="img/house/House2.jpeg" alt="house2">
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Предыдущий</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Следующий</span>
-              </button>
-            </div>
-            <div class="button-for-order text-center">
-              <a class="rounted" href="cart.html">ЗАКАЗАТЬ</a>
-            </div>
-          </div>
-          <div class="subscribe-card-model col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-            <div class="d-flex justify-content-between">
-              <div class="card-model-text container row">
-                <h5>ДОМИК</h5>
-                <p>
-                  Кожна дитина полюбляє ховатися в невеличкі будиночки, організовуючи там свій
-                  затишний простір.
-                </p>
-                <p>
-                  Ліжечко з добудовою у формі даху стане для маляти улюбленим місцем в домі-це ми вам
-                  гарантуємо.
-                </p>
-                <p>
-                  Будиночок від ChildWood, гармонійно впишеться в інтер’єри різних стилів та додасть
-                  кімнаті привабливості.
-                </p>
-
-                <h6>Кроватка доступная для заказа только в размере:</h6>
-                <div class="d-flex justify-content-between">
-                  <div><small>160см*80см</small></div>
-                  <div><strong>8100 грн</strong></div>
-                </div>
-                <p>
-                  <strong>
-                    ** Для деток от 2-12 лет.
-                  </strong>
-                </p>
-                <p>
-                  * Комплектация с ящиками для хранения +1800 грн.
-                </p>
-                <p>
-                  * Вырезы можна сделать в виде сердечек♥️, звездочек⭐️ , или оставить стандартными.
-                </p>
-                <p>
-                  МАСИВ ДУБА и итальянская краска премиум качества, разрешена для роботы с детской
-                  мебелью.
-                </p>
-                <p>
-                  Любимый оттенок выбирайте по каталогу ral classic или design.
-                </p>
-                <p>
-                  <strong>
-                    Важной особенностью Домика Сhildwood, есть съёмная конструкция крыши! Со временем,
-                    когда малыш подростет, или вам захочется обновить интеръер в детской - просто
-                    снимите верхний блок и Домик трансформируеться в классическую кроватку (нашу модель
-                    Полли - идеальный вариант для деток школьного возраста).
-                  </strong>
-                </p>
-                <p>
-                  Высота конструкции 175 см.
-                </p>
-                <p>
-                  Больше фото и дополнительной информации вы сможете найти в сохраненных сторис по
-                  ссылке:
-                  <a href="https://www.instagram.com/childwood_ua/">childwood_ua <i class="fab fa-instagram"></i></a>
-                </p>
+              <div class="slider__item">
+                <img src="img/house/House3.jpeg" alt="house3">
+              </div>
+              <div class="slider__item">
+                <img src="img/house/House4.jpeg" alt="house4">
+              </div>
+              <div class="slider__item">
+                <img src="img/house/House5.jpeg" alt="house5">
+              </div>
+              <div class="slider__item">
+                <img src="img/house/House3.jpeg" alt="house6">
               </div>
             </div>
           </div>
         </div>
+        <div class="button__order">
+          <a href="cart.html">ЗАКАЗАТЬ</a>
+        </div>
       </div>
-    </div>
-  </section>
+      <div class="subscribe__card-model">
+        <div class="container">
+          <div class="card-model-text">
+            <h4>ДОМИК</h4>
+            <p>
+              Кожна дитина полюбляє ховатися в невеличкі будиночки, організовуючи там свій
+              затишний простір.
+            </p>
+            <p>
+              Ліжечко з добудовою у формі даху стане для маляти улюбленим місцем в домі-це ми вам
+              гарантуємо.
+            </p>
+            <p>
+              Будиночок від ChildWood, гармонійно впишеться в інтер’єри різних стилів та додасть
+              кімнаті привабливості.
+            </p>
+            <div class="size__price-details">
+              <h4>Кроватка для заказа доступна только в размере:</h4>
+              <div class="size__price">
+                <div><small>160см*80см</small></div>
+                <div><strong>8100 грн</strong></div>
+              </div>
+            </div>
+            <p>
+              <strong>
+                ** Для деток от 2-12 лет.
+              </strong>
+            </p>
+            <p>
+              * Комплектация с ящиками для хранения +1800 грн.
+            </p>
+            <p>
+              * Вырезы можна сделать в виде сердечек♥️, звездочек⭐️ , или оставить стандартными.
+            </p>
+            <p>
+              МАСИВ ДУБА и итальянская краска премиум качества, разрешена для роботы с детской
+              мебелью.
+            </p>
+            <p>
+              Любимый оттенок выбирайте по каталогу ral classic или design.
+            </p>
+            <p>
+              <strong>
+                Важной особенностью Домика Сhildwood, есть съёмная конструкция крыши! Со временем,
+                когда малыш подростет, или вам захочется обновить интеръер в детской - просто
+                снимите верхний блок и Домик трансформируеться в классическую кроватку (нашу модель
+                Полли - идеальный вариант для деток школьного возраста).
+              </strong>
+            </p>
+            <p>
+              Высота конструкции 175 см.
+            </p>
+            <p>
+              Больше фото и дополнительной информации вы сможете найти в сохраненных сторис по
+              ссылке:
+              <a href="https://www.instagram.com/childwood_ua/">childwood_ua <i class="fab fa-instagram"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- footer  -->
-  <footer class="bg-pink">
-    <section class="footer">
+    <!-- footer  -->
+    <footer class="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-6">
+        <div class="footer__body">
+          <div class="footer__link">
             <h4>ИНФОРМАЦИЯ</h4>
-            <ul class="list-unstyled">
+            <ul class="list__links">
               <li><a href="index.html">Главная</a></li>
               <li><a href="about_us.html">История</a></li>
               <li><a href="paid_delivery.html">Оплата и доставка</a></li>
               <li><a href="contakts.html">Контакты</a></li>
             </ul>
           </div>
-          <div class="col-md-4 col-6">
+          <div class="footer__contakts">
             <h4>КОНТАКТЫ</h4>
-            <ul class="list-unstyled">
+            <ul class="list__links">
               <li>Украина, г. Черновцы</li>
-              <li class="contakts-data-icons">
+              <li class="contakts__data-icons">
                 <a target="_self" href="tel:+380507656153">+380 (50) 76 56 153</a>
                 <i class="fab fa-viber"></i>
               </li>
             </ul>
           </div>
-          <div class="col-md-4 col-6">
+          <div class="footer__socmedia">
             <h4>СОЦ СЕТИ</h4>
-            <div class="footer-icons">
+            <div class="socmedia__icons">
               <a href="https://www.facebook.com/ChildWood.ua"><i class="fab fa-facebook"></i> </a>
               <a href="https://www.instagram.com/childwood_ua/"><i class="fab fa-instagram"></i> </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-    crossorigin="anonymous"></script>
+    </footer>
+    <!-- Scroll to up -->
+    <div class="scrollup">
+      <i class="fa fa-chevron-up"></i>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="slick.min.js"></script>
   <script src="script.js"></script>
 </body>
 
