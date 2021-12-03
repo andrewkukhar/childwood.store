@@ -59,78 +59,74 @@
 
         <!-- form for order table and chair-->
         <section class="cart__page">
-            <div class="container">
-                <form action="send_for_bl.php" method="POST" id="form" class="form-body">
-                    <div class="form-title">
-                        <h3>Замовити постільну білизну</h3>
-                    </div>
-                    <div class="form-item">
-                        <label for="validationDefault01" class="form-label">Ім'я*:</label>
-                        <input id="validationDefault01" name="name" type="text" class="form-control"
-                            placeholder="Тетяна" required>
-                    </div>
-                    <div class="form-item">
-                        <label for="validationDefault02" class="form-label">Телефон*:</label>
-                        <input id="validationDefault02" name="phone" type="text" class="form-control"
-                            placeholder="0987654321" required>
-                    </div>
-                    <div class="form-item bed-linen-ordered">
-                        <label for="validationDefault03" class="form-label">Постільна білизна</label>
-                        <select id="validationDefault03" name="bedLinen" class="form-select" required>
-                            <option value="Постільна білизна" selected>Постільна білизна</option>
-                        </select>
-                    </div>
-                    <div class="form-item">
-                        <label for="sizeBl" class="form-label">Обрати розмір білизни:</label>
-                        <select id="sizeBl" name="sizeBl" class="form-select" required>
-                            <option value="">Вибрати</option>
-                            <option value="160см*100см">160см*100см</option>
-                            <option value="190см*110см">190см*110см</option>
-                        </select>
-                    </div>
-                    <div class="form-item">
-                        <label for="validationDefault05" class="form-label">Кількість комплектів:</label>
-                        <select id="validationDefault05" name="quantityBl" class="form-select" required>
-                            <option value="">Вибрати</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
-                    <div class="form-item">
-                        <label for="validationDefault06" class="form-label">Комплектація з або без
-                            простинки:</label>
-                        <select id="validationDefault06" name="sheetBl" class="form-select" required>
-                            <option value="">Вибрати</option>
-                            <option value="з простинкою">з простинкою</option>
-                            <option value="без простинки">без простинки</option>
-                        </select>
-                    </div>
-                    <div class="form-item">
-                        <label for="validationDefault07" class="form-label">Обрати розмір наволочки:</label>
-                        <select id="validationDefault07" name="sizePc" class="form-select" required>
-                            <option value="">Вибрати</option>
-                            <option value="40*60см">40*60см</option>
-                            <option value="50*70см">50*70см</option>
-                        </select>
-                    </div>
-                    <div class="form-item">
-                        <label for="formMessage" class="form-label">Коментар до замовлення:</label>
-                        <textarea name="formMessage" cols="40" rows="5"></textarea>
-                    </div>
-                    <div class="form-item">
-                        <label for="validationDefault08" class="form-label">Спосіб зворотнього звязку:</label>
-                        <select id="validationDefault08" name="feedback" class="form-select" required>
-                            <option value="">Вибрати</option>
-                            <option value="написати на Viber">написати на Viber</option>
-                            <option value="передзвонити">передзвонити</option>
-                        </select>
-                    </div>
-                    <input type="submit" class="form-button" value="Відправити">
-                    <input type="hidden" name="act" value="order">
-                </form>
-            </div>
+            <form action="send_for_bl.php" method="POST" id="form" class="form__body">
+                <div class="form__title">
+                    <h3>Замовити постільну білизну</h3>
+                </div>
+                <div class="form__item">
+                    <label for="name" class="form-label">Ім'я:</label>
+                    <input id="name" name="name" type="text" placeholder="Тетяна" required>
+                </div>
+                <div class="form__item">
+                    <label for="phone" class="form-label">Телефон:</label>
+                    <input id="phone" name="phone" type="text" placeholder="0987654321" required>
+                </div>
+                <div class="bed-linen-ordered">
+                    <label for="bedLinen" class="form-label">Постільна білизна</label>
+                    <select id="bedLinen" name="bedLinen" class="form-select" required>
+                        <option value="Постільна білизна" selected>Постільна білизна</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <label for="sizeBl" class="form-label">Обрати розмір білизни:</label>
+                    <select id="sizeBl" name="sizeBl" class="form-select" required>
+                        <option value="">Вибрати</option>
+                        <option value="160см*100см">160см*100см</option>
+                        <option value="190см*110см">190см*110см</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <label for="quantityBl" class="form-label">Кількість комплектів:</label>
+                    <select id="quantityBl" name="quantityBl" class="form-select" required>
+                        <option value="">Вибрати</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <label for="sheetBl" class="form-label">Комплектація з або без
+                        простинки:</label>
+                    <select id="sheetBl" name="sheetBl" class="form-select" required>
+                        <option value="">Вибрати</option>
+                        <option value="з простинкою">з простинкою</option>
+                        <option value="без простинки">без простинки</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <label for="sizePc" class="form-label">Обрати розмір наволочки:</label>
+                    <select id="sizePc" name="sizePc" class="form-select" required>
+                        <option value="">Вибрати</option>
+                        <option value="40*60см">40*60см</option>
+                        <option value="50*70см">50*70см</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <label for="formMessage" class="form-label">Коментар до замовлення:</label>
+                    <textarea id="formMessage" name="formMessage" cols="30" rows="5"></textarea>
+                </div>
+                <div class="form__item">
+                    <label for="feedback" class="form-label">Спосіб зворотнього звязку:</label>
+                    <select id="feedback" name="feedback" class="form-select" required>
+                        <option value="">Вибрати</option>
+                        <option value="написати на Viber">написати на Viber</option>
+                        <option value="передзвонити">передзвонити</option>
+                    </select>
+                </div>
+                <input type="submit" class="form__button" value="Відправити">
+                <input type="hidden" name="act" value="order">
+            </form>
         </section>
 
         <!-- footer  -->
@@ -171,9 +167,6 @@
             <i class="fa fa-chevron-up"></i>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="slick.min.js"></script>
-    <script src="script.js"></script>
 </body>
 
 </html>
