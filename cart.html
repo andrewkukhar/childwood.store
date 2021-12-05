@@ -103,12 +103,26 @@
                     </select>
                 </div>
                 <div class="form__item">
-                    <label for="side" class="form-label">Обрати сторону бортику:</label>
+                    <label for="side" class="form-label form-label__popup">
+                        Обрати сторону бортику:
+                        <a href="#popup-sideofbed-example" class="">ліва/права</a>
+                    </label>
                     <select id="side" name="side" class="form-select" required>
                         <option value="">Вибрати</option>
                         <option value="права">права</option>
                         <option value="ліва">ліва</option>
                     </select>
+                    <!-- modal Cart -->
+                    <div id="popup-sideofbed-example" class="popup-sideofbed-example">
+                        <a class="popup-sideofbed-example__body-body" href="#header"></a>
+                        <div class="popup-sideofbed-example-body">
+                            <div class="popup-sideofbed-example-content">
+                                <a href="#header" class="popup-sideofbed-example-close">X</a>
+                                <img src="img/Polli_example_side.JPG" alt="Polli-example-side">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal Cart -->
                 </div>
                 <div class="form__item">
                     <label for="boxes" class="form-label">Комплектація з або без ящиків:</label>
