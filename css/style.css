@@ -65,7 +65,7 @@ body._lock {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 150px;
+    height: 80px;
     overflow: hidden;
     margin: 0px 0px 5px 0px;
     background-color: hsla(143, 37%, 85%, 0.897);
@@ -444,56 +444,46 @@ body._lock {
 /* pages cover */
 .logo__page {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
     position: relative;
     text-align: center;
-    margin: 0 0 50px 0;
+    margin: 0px 0 50px 0;
+    
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
     .logo__page {
-        margin: 50px 0 50px 0;
-        max-width: 992px;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
-@media (max-width: 998px) {
-    .logo__page {
-        margin: 50px 0 50px 0;
-        max-width: 888px;
-    }
-}
-@media (max-width: 890px) {
+@media (max-width: 632px) {
     .logo__page {
         margin: 25px 0 50px 0;
-        max-width: 788px;
-    }
-}
-@media (max-width: 790px) {
-    .logo__page {
-        margin: 50px 0 50px 0;
-        max-width: 688px;
-    }
-}
-@media (max-width: 690px) {
-    .logo__page {
-        margin: 75px 0 50px 0;
         max-width: 588px;
     }
 }
 @media (max-width: 590px) {
     .logo__page {
-        margin: 100px 0 50px 0;
+        margin: 25px 0 50px 0;
         max-width: 488px;
     }
 }
 @media (max-width: 490px) {
     .logo__page {
-        margin: 125px 0 50px 0;
+        margin: 25px 0 50px 0;
         max-width: 388px;
     }
 }
 @media (max-width: 390px) {
     .logo__page {
-        margin: 150px 0 50px 0;
+        margin: 25px 0 50px 0;
         max-width: none;
     }
 }
@@ -510,6 +500,20 @@ body._lock {
     left: 0;
     width: 100%;
     color: rgb(67, 67, 73);
+}
+@media (min-width: 1200px) {
+    .logo__page {
+        width: 100%;
+        max-width: 1200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo__page h3 {
+        font-family: "Jost", sans-serif;
+        font-size: 42px;
+        width: 100%;
+    }
 }
 /* pages cover */
 /* slider */
