@@ -452,7 +452,6 @@ body._lock {
     position: relative;
     text-align: center;
     margin: 0px 0 50px 0;
-    
 }
 @media (min-width: 1200px) {
     .logo__page {
@@ -492,10 +491,10 @@ body._lock {
     object-fit: cover;
 }
 .logo__page h3 {
-    font-family: "Jost", sans-serif;
+    font-family: "Caveat", cursive;
     position: absolute;
-    font-size: 3.5vw;
-    bottom: 10%;
+    font-size: 4.8vw;
+    bottom: 15%;
     right: 50%;
     left: 0;
     width: 100%;
@@ -510,8 +509,7 @@ body._lock {
         margin-right: auto;
     }
     .logo__page h3 {
-        font-family: "Jost", sans-serif;
-        font-size: 42px;
+        font-size: 62px;
         width: 100%;
     }
 }
