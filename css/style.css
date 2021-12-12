@@ -451,7 +451,7 @@ body._lock {
     background-color: #fff;
     position: relative;
     text-align: center;
-    margin: 0px 0 50px 0;
+    margin: 0px 0 0 0;
 }
 @media (min-width: 1200px) {
     .logo__page {
@@ -464,25 +464,25 @@ body._lock {
 }
 @media (max-width: 632px) {
     .logo__page {
-        margin: 25px 0 50px 0;
+        margin: 25px 0 0 0;
         max-width: 588px;
     }
 }
 @media (max-width: 590px) {
     .logo__page {
-        margin: 25px 0 50px 0;
+        margin: 25px 0 0 0;
         max-width: 488px;
     }
 }
 @media (max-width: 490px) {
     .logo__page {
-        margin: 25px 0 50px 0;
+        margin: 25px 0 0 0;
         max-width: 388px;
     }
 }
 @media (max-width: 390px) {
     .logo__page {
-        margin: 25px 0 50px 0;
+        margin: 25px 0 0 0;
         max-width: none;
     }
 }
