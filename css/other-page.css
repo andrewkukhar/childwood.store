@@ -1,0 +1,167 @@
+/* pages cover */
+.logo__page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    margin: 0px 0 0 0;
+}
+@media (min-width: 1200px) {
+    .logo__page {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 632px) {
+    .logo__page {
+        margin: 25px 0 0 0;
+        max-width: 588px;
+    }
+}
+@media (max-width: 590px) {
+    .logo__page {
+        margin: 25px 0 0 0;
+        max-width: 488px;
+    }
+}
+@media (max-width: 490px) {
+    .logo__page {
+        margin: 25px 0 0 0;
+        max-width: 388px;
+    }
+}
+@media (max-width: 390px) {
+    .logo__page {
+        margin: 25px 0 0 0;
+        max-width: none;
+    }
+}
+.logo__page img {
+    width: 100%;
+    object-fit: cover;
+}
+.logo__page h3 {
+    font-family: "Caveat", cursive;
+    position: absolute;
+    font-size: 4.8vw;
+    bottom: 15%;
+    right: 50%;
+    left: 0;
+    width: 100%;
+    color: rgb(67, 67, 73);
+}
+@media (min-width: 1200px) {
+    .logo__page {
+        width: 100%;
+        max-width: 1200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo__page h3 {
+        font-size: 62px;
+        width: 100%;
+    }
+}
+/* pages cover */
+/* contakts page */
+.contakt__page-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    font-family: "Jost", sans-serif;
+    color: black;
+}
+.contakt__page-content p {
+    max-width: 100%;
+    font-size: 4.5vw;
+    padding: 10px 20px;
+}
+@media (min-width: 500px) {
+    .contakt__page-content p {
+        font-size: 24px;
+        padding: 10px 30px;
+    }
+}
+.contakt__page-content a {
+    color: black;
+    text-decoration: none;
+}
+.contakt__page-content a:hover {
+    color: rgb(109, 111, 114);
+}
+.contakt__page-content i {
+    padding: 10px 10px;
+    color: black;
+    text-decoration: none;
+}
+.contakt__page-content i:hover {
+    color: rgb(109, 111, 114);
+}
+/* contakts page */
+/* paid-and-delivery page */
+.paid-and-delivery__page-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    font-family: "Jost", sans-serif;
+    color: black;
+}
+.paid-and-delivery__page-content p {
+    max-width: 100%;
+    font-size: 4.5vw;
+    padding: 10px 20px;
+}
+@media (min-width: 500px) {
+    .paid-and-delivery__page-content p {
+        font-size: 22px;
+        padding: 10px 30px;
+    }
+}
+.paid-and-delivery__page-content a {
+    color: black;
+    text-decoration: none;
+}
+.paid-and-delivery__page-content a:hover {
+    color: rgb(109, 111, 114);
+}
+.fa-viber {
+    color: #665cac;
+}
+.fa-telegram {
+    color: #0088cc;
+}
+.fa-whatsapp-square {
+    color: #25d366;
+}
+.paid-and-delivery__page-content i {
+    font-size: 5vw;
+    padding: 5px 7px;
+}
+@media (min-width: 500px) {
+    .paid-and-delivery__page-content i {
+        font-size: 22px;
+        padding: 7px 10px;
+    }
+}
+.tel__icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* paid-and-delivery page */

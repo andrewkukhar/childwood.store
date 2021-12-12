@@ -1,0 +1,106 @@
+.footer {
+    width: 100%;
+    background-color: hsla(143, 37%, 85%, 0.897);
+    font-family: "Jost", sans-serif;
+}
+.footer__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    align-items: stretch;
+    font-family: "Jost", sans-serif;
+}
+.footer__body h4 {
+    font-weight: 500;
+    font-family: "Jost", sans-serif;
+}
+@media (min-width: 414px) {
+    .footer__body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
+    }
+}
+.footer__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px 30px;
+    text-align: start;
+    max-width: 250px;
+}
+.footer__contakts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px 30px;
+    text-align: start;
+    max-width: 250px;
+}
+.footer__socmedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px 30px;
+    text-align: start;
+    max-width: 250px;
+}
+.list__links li {
+    list-style-type: none;
+    padding-left: 20px;
+}
+.list__links a {
+    color: black;
+    text-decoration: none;
+}
+.list__links a:hover {
+    color: rgb(109, 111, 114);
+}
+.socmedia__icons {
+    display: flex;
+    justify-content: start;
+}
+.socmedia__icons i {
+    padding: 10px 10px;
+    font-size: 40px;
+    color: rgb(67, 67, 73);
+}
+.socmedia__icons i:hover {
+    font-size: 41px;
+    color: rgb(109, 111, 114);
+}
+.contakts__data-icons i {
+    font-size: 24px;
+    color: rgb(67, 67, 73);
+}
+.contakts__data-icons i:hover {
+    font-size: 24.5px;
+    color: rgb(109, 111, 114);
+}
+/* footer */
+/* scrollup button */
+.scrollup {
+    position: fixed; /* фиксированная позиция */
+    color: #fff; /* цвет текста */
+    background-color: #666666a6; /* цвет заднего фона */
+    right: 20px; /* расстояние от правого края */
+    bottom: 0px; /* расстояние от нижнего края */
+    padding: 3px 10px; /* отступы до содержимого блока */
+    font-size: 20px; /* размер шрифта (иконки) */
+    border-top-left-radius: 5px; /* скругление верхнего левого угла */
+    border-top-right-radius: 5px; /* скругление верхнего правого угла */
+    cursor: pointer; /* форма курсора */
+    display: none; /* не отображать элемент */
+    text-align: center; /*выравнивание содержимого элемента по центру */
+    z-index: 12;
+}
+.scrollup:hover {
+    background-color: rgba(58, 58, 58, 0.678); /* цвет заднего фона при наведении */
+}

@@ -1,0 +1,224 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    margin: 0px 0px 5px 0px;
+    background-color: hsla(143, 37%, 85%, 0.897);
+}
+@media (max-width: 1200px) {
+    .header {
+        max-width: 970px;
+        min-width: 100%;
+    }
+}
+@media (max-width: 1092px) {
+    .header {
+        max-width: 850px;
+    }
+}
+@media (max-width: 992px) {
+    .header {
+        max-width: 750px;
+    }
+}
+@media (max-width: 868px) {
+    .header {
+        max-width: 690px;
+    }
+}
+@media (max-width: 767px) {
+    .header {
+        max-width: 568px;
+    }
+}
+@media (max-width: 648px) {
+    .header {
+        max-width: 482px;
+        min-width: 100%;
+    }
+}
+@media (max-width: 479px) {
+    .header {
+        max-width: 360px;
+        min-width: 100%;
+    }
+}
+@media (max-width: 375px) {
+    .header {
+        max-width: none;
+        min-width: 100%;
+    }
+}
+.menu__body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    white-space: nowrap;
+}
+@media (max-width: 648px) {
+    .menu__body {
+        display: flex;
+        flex-direction: column;
+        max-width: none;
+    }
+}
+.nav__menu a {
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+@media (min-width: 1000px) {
+    .nav__menu a {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+}
+@media (min-width: 1200px) {
+    .nav__menu a {
+        font-size: 20px;
+        padding: 8px 15px;
+    }
+}
+@media (max-width: 478px) {
+    .nav__menu a {
+        padding: 3px 5px;
+        font-size: 14px;
+        max-width: 392px;
+    }
+}
+@media (max-width: 398px) {
+    .nav__menu a {
+        padding: 3px 5px;
+        font-size: 14px;
+        max-width: 338px;
+    }
+}
+@media (max-width: 340px) {
+    .nav__menu a {
+        padding: 3px 5px;
+        font-size: 14px;
+        max-width: none;
+    }
+}
+.nav__menu a:hover {
+    color: rgb(109, 111, 114);
+}
+.nav__menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 648px) {
+    .nav__menu {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: none;
+    }
+}
+.nav__menu-right {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 648px) {
+    .nav__menu-right {
+        display: flex;
+        justify-content: end;
+        max-width: 468px;
+    }
+}
+@media (max-width: 478px) {
+    .nav__menu-right {
+        display: flex;
+        justify-content: center;
+        max-width: none;
+    }
+}
+.nav__mune-icons a {
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.nav__mune-icons a:hover {
+    color: rgb(109, 111, 114);
+}
+@media (min-width: 1000px) {
+    .nav__mune-icons a {
+        padding: 13px;
+        font-size: 22px;
+        text-decoration: none;
+        color: #fff;
+    }
+    .nav__mune-icons a:hover {
+        font-size: 22px;
+        color: rgb(109, 111, 114);
+    }
+}
+@media (min-width: 1200px) {
+    .nav__mune-icons a {
+        padding: 17px;
+        font-size: 24px;
+        text-decoration: none;
+        color: #fff;
+    }
+    .nav__mune-icons a:hover {
+        font-size: 24px;
+        color: rgb(109, 111, 114);
+    }
+}
+@media (max-width: 478px) {
+    .nav__mune-icons a {
+        padding: 9px;
+        font-size: 18px;
+        text-decoration: none;
+        color: #fff;
+        max-width: 392px;
+    }
+    .nav__mune-icons a:hover {
+        font-size: 18px;
+        color: rgb(109, 111, 114);
+    }
+}
+@media (max-width: 398px) {
+    .nav__mune-icons a {
+        padding: 9px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #fff;
+        max-width: 338px;
+    }
+    .nav__mune-icons a:hover {
+        font-size: 16px;
+        color: rgb(109, 111, 114);
+    }
+}
+@media (max-width: 340px) {
+    .nav__mune-icons a {
+        padding: 9px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #fff;
+        max-width: none;
+    }
+    .nav__mune-icons a:hover {
+        font-size: 14px;
+        color: rgb(109, 111, 114);
+    }
+}

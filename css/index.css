@@ -1,2 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 @import "style.css";
+@import "header.css";
+@import "popup.css";
+@import "footer.css";
+@import "cart-form.css";
+@import "other-page.css";
+@import "card-model.css";
+@import "slider.css";
+@import "product-card-main-page.css";
