@@ -1,0 +1,127 @@
+.product__catalog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .product__catalog {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+}
+.product__card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+    margin: 5px 10px 50px 10px;
+    width: 300px;
+    max-width: 100%;
+    font-family: "Jost", sans-serif;
+}
+.product__card:hover {
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+}
+.product__details {
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+.product__details h4 a {
+    color: rgb(67, 67, 73);
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+}
+.product__details h4 a:hover {
+    color: rgb(109, 111, 114);
+}
+.product__details p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgba(20, 2, 2, 0.801);
+    overflow: hidden;
+}
+.product__details p a {
+    text-decoration: none;
+    font-weight: 400;
+    color: rgba(20, 2, 2, 0.801);
+}
+.product__details p a:hover {
+    color: rgb(109, 111, 114);
+}
+.product__details p:hover {
+    overflow: visible;
+}
+.product__bottom-details {
+    margin: 5px 5px;
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+.product__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+.product__price h6 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: rgba(20, 2, 2, 0.801);
+}
+.product__price strong {
+    color: #000;
+}
+.product__price span {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: rgba(20, 2, 2, 0.801);
+}
+.product__links {
+    font-size: 12px;
+    margin-left: 10px;
+}
+.product__price small {
+    font-size: 13px;
+    font-weight: 500;
+}
+.price__size {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.link__details {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1px 1px;
+    padding: 1px 1px;
+}
+.link__details a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 12px;
+    background-color: hsla(141, 28%, 88%, 0.897);
+}
+.link__details a:hover {
+    color: rgb(109, 111, 114);
+    background-color: hsla(143, 35%, 79%, 0.897);
+}
+.link__details {
+    padding: 10px;
+    font-family: "Jost", sans-serif;
+}

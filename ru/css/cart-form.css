@@ -1,0 +1,137 @@
+.cart__page {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 137px;
+    margin-bottom: 40px;
+}
+.form__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 300px;
+}
+@media (min-width: 414px) {
+    .form__body {
+        width: 100%;
+        max-width: 420px;
+    }
+}
+.bed-linen-ordered {
+    visibility: hidden;
+    height: 1px;
+}
+.form__title {
+    text-align: center;
+}
+.form__title h3 {
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+@media (min-width: 414px) {
+    .form-title h3 {
+        font-size: 21px;
+    }
+}
+@media (min-width: 544px) {
+    .form-title h3 {
+        font-size: 24px;
+    }
+}
+.form-label {
+    width: 100%;
+}
+.form-label__popup {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.form__item select {
+    width: 100%;
+    color: #000;
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    background-color: rgba(236, 236, 236, 0.829);
+    border-radius: 10px;
+    border: 1px solid rgb(173, 173, 173);
+    padding: 10px 10px;
+}
+.form__item > option {
+    width: 100%;
+    color: #000;
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    border: 1px solid rgb(173, 173, 173);
+    background-color: rgba(152, 226, 186, 0.829);
+}
+.form__item input {
+    width: 93%;
+    color: #000;
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgb(173, 173, 173);
+    background-color: rgba(236, 236, 236, 0.829);
+    padding: 10px 10px;
+}
+.form__item label {
+    width: 100%;
+    color: #000;
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+.form__item textarea {
+    width: 93%;
+    color: #000;
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgb(173, 173, 173);
+    background-color: rgba(236, 236, 236, 0.829);
+    min-height: 120px;
+    resize: vertical;
+    padding: 10px 10px;
+}
+.form__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    background-color: rgb(250, 212, 217);
+    color: #fff;
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 1px solid rgb(197, 153, 159);
+    transition: all 0.5s ease 0s;
+    object-fit: cover;
+    margin-top: 20px;
+}
+.form__button:hover {
+    background-color: rgb(238, 181, 188);
+}
