@@ -8,6 +8,7 @@
 @media (min-width: 768px) {
     .product__catalog {
         width: 100%;
+        max-width: 1200px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

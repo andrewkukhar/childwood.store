@@ -21,7 +21,7 @@ body._lock {
 }
 .wrapper {
     width: 100%;
-    min-width: 0;
+    max-width: 1250px;
     min-height: 100%;
     display: flex;
     flex-direction: column;
