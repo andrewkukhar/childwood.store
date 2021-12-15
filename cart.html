@@ -59,7 +59,7 @@
 
         <!-- form for order bed-->
         <section class="cart__page">
-            <form action="send.php" method="POST" id="form" class="form__body">
+            <form name="bedforms" action="send.php" method="POST" id="formb" class="form__body bedforms">
                 <div class="form__title">
                     <h3>Замовити Ліжечко</h3>
                 </div>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="form__item">
                     <label for="model" class="form-label">Обрати модель:</label>
-                    <select id="model" name="model" class="form-select" required>
+                    <select id="model" name="model" class="form-select bed-model" required>
                         <option value="">Вибрати</option>
                         <option value="Класік">Класік</option>
                         <option value="Сканді">Сканді</option>
@@ -195,6 +195,7 @@
             <i class="fa fa-chevron-up"></i>
         </div>
     </div>
+    <script src="js/popup-example.js"></script>
 </body>
 
 </html>
