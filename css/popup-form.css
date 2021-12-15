@@ -1,13 +1,22 @@
 .form-label__popup a {
-    padding-right: 50px;
+    padding: 3px 20px;
+    margin-right: 10px;
     text-decoration: none;
-    color: #000;
+    color: rgb(92, 92, 92);
     font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    border-radius: 20px;
+    background-color: hsla(141, 28%, 88%, 0.897);
 }
 .form-label__popup a:hover {
-    color: rgb(99, 98, 98);
+    color: rgb(0, 0, 0);
     font-size: 18px;
-    border-bottom: 0.2px solid rgb(109, 111, 114);
+    font-weight: 500;
+    border-bottom: 0.1px solid rgb(109, 111, 114);
+    background-color: hsla(141, 30%, 81%, 0.897);
+
 }
 .popup-sideofbed-example {
     position: fixed;
@@ -60,16 +69,6 @@
     }
 }
 .popup-sideofbed-example-content {
-    width: 100%;
-    display: none;
-    max-width: 300px;
-    background-color: #fff;
-    position: relative;
-    opacity: 0;
-    transition: all 0.8s ease 0s;
-    transform: translate(opx, -100%);
-}
-.popup-sideofbed-example-content.active {
     width: 100%;
     display: none;
     max-width: 300px;
