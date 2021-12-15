@@ -1,12 +1,8 @@
-// document.forms
-// console.log(document.forms);
-
-const bedForm = document.getElementById('formb');
-console.log(bedForm);
-
+const bedForm = document.forms.bedforms;
 const bedFormModel = bedForm.model;
-const bedFormModelValue = bedFormModel.value;
-console.log(bedFormModelValue);
-
-const bedModel = document.querySelectorAll('.bed-model');
-console.log(bedModel);
+// const bedFormModelSelect = bedFormModel.selectedIndex;
+// console.log(bedFormModelSelect);
+bedFormModel.addEventListener("change", function (e) {
+    let index = bedFormModel.selectedIndex;
+    console.log(index);
+});
