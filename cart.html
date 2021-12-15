@@ -74,13 +74,13 @@
                 <div class="form__item">
                     <label for="model" class="form-label">Обрати модель:</label>
                     <select id="model" name="model" class="form-select bed-model" required>
-                        <option value="">Вибрати</option>
-                        <option value="Класік">Класік</option>
-                        <option value="Сканді">Сканді</option>
-                        <option value="Мішель">Мішель</option>
-                        <option value="Поллі">Поллі</option>
-                        <option value="Будиночок">Будиночок</option>
-                        <option value="Будиночок міні">Будиночок міні</option>
+                        <option data-sel="#sel0" value="">Вибрати</option>
+                        <option data-sel="#sel1" value="Класік">Класік</option>
+                        <option data-sel="#sel2" value="Сканді">Сканді</option>
+                        <option data-sel="#sel3" value="Мішель">Мішель</option>
+                        <option data-sel="#sel4" value="Поллі">Поллі</option>
+                        <option data-sel="#sel5" value="Будиночок">Будиночок</option>
+                        <option data-sel="#sel6" value="Будиночок міні">Будиночок міні</option>
                     </select>
                 </div>
                 <div class="form__item">
@@ -116,9 +116,32 @@
                     <div id="popup-sideofbed-example" class="popup-sideofbed-example">
                         <a class="popup-sideofbed-example__body-body" href="#header"></a>
                         <div class="popup-sideofbed-example-body">
-                            <div class="popup-sideofbed-example-content">
+                            <div id="sel1" class="popup-sideofbed-example-content" style="visibility: hidden;">
                                 <a href="#header" class="popup-sideofbed-example-close">X</a>
-                                <img src="img/Polli_example_side.JPG" alt="Polli-example-side">
+                            </div>
+                            <div id="sel1" class="popup-sideofbed-example-content">
+                                <a href="#header" class="popup-sideofbed-example-close">X</a>
+                                <img src="img/polli_example_side.jpg" alt="polli-example-side">
+                            </div>
+                            <div id="sel2" class="popup-sideofbed-example-content">
+                                <a href="#header" class="popup-sideofbed-example-close">X</a>
+                                <img src="img/scandi_example_side.jpg" alt="scandi-example-side">
+                            </div>
+                            <div id="sel3" class="popup-sideofbed-example-content">
+                                <a href="#header" class="popup-sideofbed-example-close">X</a>
+                                <img src="img/polli_example_side.jpg" alt="polli-example-side">
+                            </div>
+                            <div id="sel4" class="popup-sideofbed-example-content">
+                                <a href="#header" class="popup-sideofbed-example-close">X</a>
+                                <img src="img/scandi_example_side.jpg" alt="scandi-example-side">
+                            </div>
+                            <div id="sel5" class="popup-sideofbed-example-content">
+                                <a href="#header" class="popup-sideofbed-example-close">X</a>
+                                <img src="img/polli_example_side.jpg" alt="polli-example-side">
+                            </div>
+                            <div id="sel6" class="popup-sideofbed-example-content">
+                                <a href="#header" class="popup-sideofbed-example-close">X</a>
+                                <img src="img/scandi_example_side.jpg" alt="scandi-example-side">
                             </div>
                         </div>
                     </div>

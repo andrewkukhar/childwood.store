@@ -18,6 +18,7 @@
     top: 0;
     right: 0;
     left: 0;
+    bottom: 0;
     opacity: 0;
     z-index: 21;
     visibility: hidden;
@@ -60,6 +61,17 @@
 }
 .popup-sideofbed-example-content {
     width: 100%;
+    display: none;
+    max-width: 300px;
+    background-color: #fff;
+    position: relative;
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    transform: translate(opx, -100%);
+}
+.popup-sideofbed-example-content.active {
+    width: 100%;
+    display: none;
     max-width: 300px;
     background-color: #fff;
     position: relative;
