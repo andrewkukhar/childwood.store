@@ -16,7 +16,6 @@
     font-weight: 500;
     border-bottom: 0.1px solid rgb(109, 111, 114);
     background-color: hsla(141, 30%, 81%, 0.897);
-
 }
 .popup-sideofbed-example {
     position: fixed;
@@ -116,4 +115,16 @@
         right: 10px;
         padding: 7px;
     }
+}
+.popup-sideofbed-example-content__text {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+}
+.popup-sideofbed-example-content__text p {
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 20px 30px;
+    letter-spacing: 2px;
 }
