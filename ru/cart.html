@@ -24,8 +24,8 @@
           <div class="nav__menu">
             <a class="menu__link" href="index.html">ГЛАВНАЯ</a>
             <a class="menu__link" href="index.html#catalog">КАТАЛОГ</a>
-            <a class="menu__link" href="about_us.html">О НАС</a>
-            <a class="menu__link" href="paid_delivery.html">ДОСТАВКА</a>
+            <!-- <a class="menu__link" href="about_us.html">О НАС</a> -->
+            <a class="menu__link" href="paid_delivery.html">ОПЛАТА И ДОСТАВКА</a>
           </div>
           <div class="nav__menu-right">
             <div class="nav__mune-icons">
@@ -73,14 +73,14 @@
         </div>
         <div class="form__item">
           <label for="model" class="form-label">Выбрать модель:</label>
-          <select id="model" name="model" class="form-select" required>
-            <option value="">Выбрать</option>
-            <option value="Класик">Класик</option>
-            <option value="Сканди">Сканди</option>
-            <option value="Мишель">Мишель</option>
-            <option value="Полли">Полли</option>
-            <option value="Домик">Домик</option>
-            <option value="Домик мини">Домик мини</option>
+          <select id="model" name="model" class="form-select bed-model" required>
+            <option data-sel="#sel0" value="">Выбрать</option>
+            <option data-sel="#sel1" value="Класик">Класик</option>
+            <option data-sel="#sel2" value="Сканди">Сканди</option>
+            <option data-sel="#sel3" value="Мишель">Мишель</option>
+            <option data-sel="#sel4" value="Полли">Полли</option>
+            <option data-sel="#sel5" value="Домик">Домик</option>
+            <option data-sel="#sel6" value="Домик мини">Домик мини</option>
           </select>
         </div>
         <div class="form__item">
@@ -104,12 +104,51 @@
         </div>
 
         <div class="form__item">
-          <label for="side" class="form-label">Выбрать сторону бортика:</label>
+          <label for="side" class="form-label form-label__popup">
+            Выбрать сторону бортика:
+            <a href="#popup-sideofbed-example" class="">левая / правая</a>
+          </label>
           <select id="side" name="side" class="form-select" required>
             <option value="">Выбрать</option>
             <option value="правая">правая</option>
             <option value="левая">левая</option>
           </select>
+          <!-- modal Cart -->
+          <div id="popup-sideofbed-example" class="popup-sideofbed-example">
+            <a class="popup-sideofbed-example__body-body" href="#header"></a>
+            <div class="popup-sideofbed-example-body">
+              <div id="sel1" class="popup-sideofbed-example-content" style="visibility: hidden;">
+                <a href="#header" class="popup-sideofbed-example-close">X</a>
+              </div>
+              <div id="sel1" class="popup-sideofbed-example-content">
+                <a href="#header" class="popup-sideofbed-example-close">X</a>
+                <img src="img/classik-example-side.jpg" alt="classik-example-side">
+              </div>
+              <div id="sel2" class="popup-sideofbed-example-content">
+                <a href="#header" class="popup-sideofbed-example-close">X</a>
+                <img src="img/scandi_example_side.jpg" alt="scandi-example-side">
+              </div>
+              <div id="sel3" class="popup-sideofbed-example-content">
+                <a href="#header" class="popup-sideofbed-example-close">X</a>
+                <div class="popup-sideofbed-example-content__text">
+                  <p>Бортики стандартные, без изменений, нужно выбрать любой</p>
+                </div>
+              </div>
+              <div id="sel4" class="popup-sideofbed-example-content">
+                <a href="#header" class="popup-sideofbed-example-close">X</a>
+                <img src="img/polli_example_side.jpg" alt="polli-example-side">
+              </div>
+              <div id="sel5" class="popup-sideofbed-example-content">
+                <a href="#header" class="popup-sideofbed-example-close">X</a>
+                <img src="img/house-example-side.jpg" alt="house-example-side">
+              </div>
+              <div id="sel6" class="popup-sideofbed-example-content">
+                <a href="#header" class="popup-sideofbed-example-close">X</a>
+                <img src="img/house-mini-example-side.jpg" alt="house-mini-example-side">
+              </div>
+            </div>
+          </div>
+          <!-- modal Cart -->
         </div>
         <div class="form__item">
           <label for="boxes" class="form-label">Комплектация с или без ящиков:</label>
@@ -182,6 +221,8 @@
       <i class="fa fa-chevron-up"></i>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/popup-example.js"></script>
 </body>
 
 </html>

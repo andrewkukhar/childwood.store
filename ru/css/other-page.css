@@ -8,39 +8,26 @@
     background-color: #fff;
     position: relative;
     text-align: center;
-    margin: 0px 0 0 0;
 }
-@media (min-width: 1200px) {
+@media (max-width: 750px) {
     .logo__page {
-        max-width: 1200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin: -25px 0 -60px 0;
     }
 }
-@media (max-width: 632px) {
+@media (max-width: 650px) {
     .logo__page {
-        margin: 25px 0 0 0;
-        max-width: 588px;
+        margin-top: 0;
+        margin-bottom: -50px;
     }
 }
-@media (max-width: 590px) {
+@media (max-width: 500px) {
     .logo__page {
-        margin: 25px 0 0 0;
-        max-width: 488px;
+        margin: 25px 0 -40px 0;
     }
 }
-@media (max-width: 490px) {
+@media (max-width: 350px) {
     .logo__page {
-        margin: 25px 0 0 0;
-        max-width: 388px;
-    }
-}
-@media (max-width: 390px) {
-    .logo__page {
-        margin: 25px 0 0 0;
-        max-width: none;
+        margin: 50px 0 -40px 0;
     }
 }
 .logo__page img {
@@ -57,13 +44,32 @@
     width: 100%;
     color: rgb(67, 67, 73);
 }
+@media (min-width: 750px) {
+    .logo__page {
+        margin-top: -50px;
+        margin-bottom: -85px;
+    }
+}
+@media (min-width: 900px) {
+    .logo__page {
+        margin-top: -100px;
+    }
+}
+@media (min-width: 1000px) {
+    .logo__page {
+        margin-top: -110px;
+        margin-bottom: -120px;
+    }
+}
 @media (min-width: 1200px) {
     .logo__page {
-        width: 100%;
         max-width: 1200px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -135px;
+        margin-bottom: -150px;
     }
     .logo__page h3 {
         font-size: 62px;
@@ -71,6 +77,65 @@
     }
 }
 /* pages cover */
+/* pages cover about us */
+.logo__page-about-us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+}
+@media (max-width: 1000px) {
+    .logo__page-about-us {
+        margin-top: 25px;
+    }
+}
+@media (max-width: 850px) {
+    .logo__page-about-us {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 600px) {
+    .logo__page-about-us {
+        margin-top: 75px;
+    }
+}
+@media (max-width: 450px) {
+    .logo__page-about-us {
+        margin-top: 100px;
+    }
+}
+.logo__page-about-us img {
+    width: 50%;
+    object-fit: cover;
+}
+.logo__page-about-us h3 {
+    font-family: "Caveat", cursive;
+    position: absolute;
+    font-size: 3.8vw;
+    bottom: 15%;
+    right: 50%;
+    left: 0;
+    width: 100%;
+    color: rgb(67, 67, 73);
+}
+@media (min-width: 1200px) {
+    .logo__page-about-us {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .logo__page-about-us h3 {
+        font-size: 42px;
+        width: 100%;
+    }
+}
 /* contakts page */
 .contakt__page-content {
     width: 100%;
@@ -112,6 +177,7 @@
 /* paid-and-delivery page */
 .paid-and-delivery__page-content {
     width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
