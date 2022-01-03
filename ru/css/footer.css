@@ -15,6 +15,7 @@
 .footer__body h4 {
     font-weight: 500;
     font-family: "Jost", sans-serif;
+    padding-bottom: 15px;
 }
 @media (min-width: 414px) {
     .footer__body {
@@ -29,7 +30,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin: 30px 30px;
     text-align: start;
     max-width: 250px;
@@ -38,7 +39,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin: 30px 30px;
     text-align: start;
     max-width: 250px;
@@ -47,14 +48,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin: 30px 30px;
     text-align: start;
     max-width: 250px;
 }
 .list__links li {
     list-style-type: none;
-    padding-left: 20px;
 }
 .list__links a {
     color: black;
