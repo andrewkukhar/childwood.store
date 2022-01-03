@@ -7,7 +7,6 @@ bedForm.addEventListener("change", function () {
     photoItem[indexSel].style.display = "block";
     lastIndex = indexSel;
 });
-
 $(function () {
     $('.scrollup').click(function () {
         $("html, body").animate({
