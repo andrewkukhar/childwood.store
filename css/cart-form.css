@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 137px;
+    margin-top: 70px;
     margin-bottom: 40px;
 }
 .form__body {
@@ -134,4 +134,39 @@
 }
 .form__button:hover {
     background-color: rgb(238, 181, 188);
+}
+.form__item-color a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 10px;
+    background-color: hsla(141, 28%, 88%, 0.897);
+    border-bottom: 1px solid #000;
+}
+.form-select-color a:hover {
+    padding: 5px 16px;
+    font-size: 15.5px;
+    font-weight: 430;
+    background-color: hsla(141, 30%, 81%, 0.897);
+    border-bottom: 2px solid #000;
+}
+.form-select-color span {
+    color: #ec9b03;
+    font-size: 15.5px;
+    font-weight: 430;
+}
+.form-select-color {
+    display: none;
+    margin: 5px 0;
+}
+.form-select-color select {
+    margin-bottom: 15px;
+}
+.form__item textarea::placeholder {
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 350;
+    font-style: italic;
 }

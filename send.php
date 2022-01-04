@@ -10,6 +10,7 @@ if ($_POST['act'] == 'order') {
     $phone = ($_POST['phone']);
     $model = ($_POST['model']);
     $size = ($_POST['size']);
+    $color = ($_POST['color']);
     $quantityBed = ($_POST['quantityBed']);
     $side = ($_POST['side']);
     $boxes = ($_POST['boxes']);
@@ -22,6 +23,7 @@ if ($_POST['act'] == 'order') {
         'Телефон:' => $phone,
         'Модель:' => $model,
         'Розмір:' => $size,
+        'Колір:' => $color,
         'Кількість ліжечок:' => $quantityBed,
         'Сторона бортика:' => $side,
         'Комплектація:' => $boxes,

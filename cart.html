@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <base target="_self">
     <title>childwood_ua</title>
 </head>
 
@@ -71,13 +72,13 @@
                 <div class="form__item">
                     <label for="model" class="form-label">Обрати модель:</label>
                     <select id="model" name="model" class="form-select bed-model" required>
-                        <option data-sel="#sel0" value="">Вибрати</option>
-                        <option data-sel="#sel1" value="Класік">Класік</option>
-                        <option data-sel="#sel2" value="Сканді">Сканді</option>
-                        <option data-sel="#sel3" value="Мішель">Мішель</option>
-                        <option data-sel="#sel4" value="Поллі">Поллі</option>
-                        <option data-sel="#sel5" value="Будиночок">Будиночок</option>
-                        <option data-sel="#sel6" value="Будиночок міні">Будиночок міні</option>
+                        <option data-color="#col0" data-sel="#sel0" value="">Вибрати</option>
+                        <option data-color="#col1" data-sel="#sel1" value="Класік">Класік</option>
+                        <option data-color="#col2" data-sel="#sel2" value="Сканді">Сканді</option>
+                        <option data-color="#col3" data-sel="#sel3" value="Мішель">Мішель</option>
+                        <option data-color="#col4" data-sel="#sel4" value="Поллі">Поллі</option>
+                        <option data-color="#col5" data-sel="#sel5" value="Будиночок">Будиночок</option>
+                        <option data-color="#col6" data-sel="#sel6" value="Будиночок міні">Будиночок міні</option>
                     </select>
                 </div>
                 <div class="form__item">
@@ -88,6 +89,73 @@
                         <option value="190*80">190*80</option>
                         <option value="190*90">190*90</option>
                     </select>
+                </div>
+                <div class="form__item-color form__item">
+                    <label for="col" class="form-label">Обрати колір:</label>
+                    <div id="col0" class="form-select-color form__item">
+                        <select name="color" class="form-select" required>
+                            <option value="">Вибрати</option>
+                            <option value="Білий">Білий</option>
+                            <option value="Білий + натуральний дуб">Білий + натуральний дуб</option>
+                            <option value="Обрати колір в каталозі">Обрати колір в каталозі</option>
+                        </select>
+                        <a href="https://ral.ru/classic_russian" target="_blank" class="link-color">Каталог кольорів <span>Ral
+                                Classic</span></a>
+                    </div>
+                    <div id="col1" class="form-select-color form__item">
+                        <select name="color" class="form-select" required>
+                            <option value="">Вибрати</option>
+                            <option value="Білий">Білий</option>
+                            <option value="Слонова кістка">Слонова кістка</option>
+                        </select>
+                    </div>
+                    <div id="col2" class="form-select-color form__item">
+                        <select name="color" class="form-select" required>
+                            <option value="">Вибрати</option>
+                            <option value="Білий">Білий</option>
+                            <option value="Білий + натуральні ніжки">Білий + натуральні ніжки</option>
+                            <option value="Обрати колір в каталозі">Обрати колір в каталозі</option>
+                        </select>
+                        <a href="https://ral.ru/classic_russian" target="_blank">Каталог кольорів <span>Ral
+                            Classic</span></a>
+                    </div>
+                    <div id="col3" class="form-select-color form__item">
+                        <select name="color" class="form-select" required>
+                            <option value="">Вибрати</option>
+                            <option value="Білий">Білий</option>
+                            <option value="Слонова кістка">Слонова кістка</option>
+                        </select>
+                    </div>
+                    <div id="col4" class="form-select-color form__item">
+                        <select name="color" class="form-select" required>
+                            <option value="">Вибрати</option>
+                            <option value="Білий">Білий</option>
+                            <option value="Білий + натуральний дуб">Білий + натуральний дуб</option>
+                            <option value="Обрати колір в каталозі">Обрати колір в каталозі</option>
+                        </select>
+                        <a href="https://ral.ru/classic_russian" target="_blank">Каталог кольорів <span>Ral
+                            Classic</span></a>
+                    </div>
+                    <div id="col5" class="form-select-color form__item">
+                        <select name="color" class="form-select" required>
+                            <option value="">Вибрати</option>
+                            <option value="Білий">Білий</option>
+                            <option value="Білий + натуральний дуб">Білий + натуральний дуб</option>
+                            <option value="Обрати колір в каталозі">Обрати колір в каталозі</option>
+                        </select>
+                        <a href="https://ral.ru/classic_russian" target="_blank">Каталог кольорів <span>Ral
+                            Classic</span></a>
+                    </div>
+                    <div id="col6" class="form-select-color form__item">
+                        <select name="color" class="form-select" required>
+                            <option value="">Вибрати</option>
+                            <option value="Білий">Білий</option>
+                            <option value="Білий + натуральний дуб">Білий + натуральний дуб</option>
+                            <option value="Обрати колір в каталозі">Обрати колір в каталозі</option>
+                        </select>
+                        <a href="https://ral.ru/classic_russian" target="_blank">Каталог кольорів <span>Ral
+                            Classic</span></a>
+                    </div>
                 </div>
                 <div class="form__item">
                     <label for="quantityBed" class="form-label">Кількість ліжечок:</label>
@@ -168,7 +236,7 @@
                 </div>
                 <div class="form__item">
                     <label for="formMessage" class="form-label">Коментар до замовлення:</label>
-                    <textarea id="formMessage" name="formMessage" cols="30" rows="5"></textarea>
+                    <textarea id="formMessage" name="formMessage" cols="30" rows="5" placeholder="Потрібно сюди написати колір, якщо Ви обирали за каталогом Рал"></textarea>
                 </div>
                 <div class="form__item">
                     <label for="feedback" class="form-label">Спосіб зворотнього звязку:</label>
