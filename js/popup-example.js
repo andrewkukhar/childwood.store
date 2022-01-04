@@ -36,3 +36,14 @@ $(window).scroll(function () {
         lastIndexColor = indexColor;
     });
 })();
+// (function () {
+//     let bedForm = document.getElementById('colorScandi');
+//     let ralItem = document.querySelectorAll('.form__item-ral');
+//     let lastIndexRal = 0;
+//     bedForm.addEventListener("change", function () {
+//         ralItem[lastIndexRal].style.display = "none";
+//         let indexRal = bedForm.selectedIndex;
+//         ralItem[indexRal].style.display = "block";
+//         lastIndexRal = indexRal;
+//     });
+// })();
