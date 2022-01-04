@@ -17,21 +17,12 @@
     font-family: "Jost", sans-serif;
     padding-bottom: 15px;
 }
-@media (min-width: 414px) {
-    .footer__body {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: baseline;
-        justify-content: center;
-    }
-}
 .footer__link {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px 30px;
+    margin: 30px;
     text-align: start;
     max-width: 250px;
 }
@@ -40,7 +31,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px 30px;
+    margin: 30px;
     text-align: start;
     max-width: 250px;
 }
@@ -49,19 +40,42 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px 30px;
+    margin: 30px;
     text-align: start;
     max-width: 250px;
+}
+@media (max-width: 762px) {
+    .footer__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__link, 
+    .footer__contakts,
+    .footer__socmedia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 30px;
+        text-align: center;
+        max-width: 300px;
+    }
 }
 .list__links li {
     list-style-type: none;
 }
 .list__links a {
     color: black;
+    font-size: 16px;
     text-decoration: none;
 }
 .list__links a:hover {
     color: rgb(109, 111, 114);
+    font-size: 17px;
+    border-bottom: 1px solid #000;
+    transition: all 0.5s ease 0s;
 }
 .socmedia__icons {
     display: flex;
@@ -73,16 +87,23 @@
     color: rgb(67, 67, 73);
 }
 .socmedia__icons i:hover {
-    font-size: 41px;
+    font-size: 44px;
     color: rgb(109, 111, 114);
+    transition: all 0.5s ease 0s;
+}
+.contakts__data-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .contakts__data-icons i {
-    font-size: 24px;
-    color: rgb(67, 67, 73);
+    font-size: 32px;
+    padding: 20px 10px 0px 10px;
 }
 .contakts__data-icons i:hover {
-    font-size: 24.5px;
-    color: rgb(109, 111, 114);
+    font-size: 35px;
 }
 /* footer */
 /* scrollup button */
