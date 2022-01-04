@@ -11,6 +11,7 @@ if ($_POST['act'] == 'order') {
     $model = ($_POST['model']);
     $size = ($_POST['size']);
     $color = ($_POST['color']);
+    $colorvelours = ($_POST['colorvelours']);
     $quantityBed = ($_POST['quantityBed']);
     $side = ($_POST['side']);
     $boxes = ($_POST['boxes']);
