@@ -13,6 +13,9 @@ if ($_POST['act'] == 'order') {
     $phone = ($_POST['phone']);
     $model = ($_POST['model']);
     $size = ($_POST['size']);
+    $color = ($_POST['color']);
+    $colorVelours = ($_POST['colorVelours']);
+    $ralColor = ($_POST['ralColor']);
     $quantityBed = ($_POST['quantityBed']);
     $side = ($_POST['side']);
     $boxes = ($_POST['boxes']);
@@ -25,7 +28,10 @@ if ($_POST['act'] == 'order') {
         'Имя:' => $name,
         'Телефон:' => $phone,
         'Модель:' => $model,
-        'Розмер:' => $size,
+        'Размер:' => $size,
+        'Цвет кроватки:' => $color,
+        'Цвет велюра:' => $colorVelours,
+        'Цвет кроватки рал:' => $ralColor,
         'Количество кроваток:' => $quantityBed,
         'Сторона бортика:' => $side,
         'Комплектация:' => $boxes,
