@@ -5,11 +5,10 @@
 }
 .footer__body {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    white-space: nowrap;
-    align-items: stretch;
+    align-items: baseline;
     font-family: "Jost", sans-serif;
 }
 .footer__body h4 {
@@ -44,6 +43,11 @@
     text-align: start;
     max-width: 250px;
 }
+.footer__socmedia h4 {
+    color: black;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
 @media (max-width: 762px) {
     .footer__body {
         display: flex;
@@ -58,7 +62,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 30px 30px;
+        margin: 15px 30px;
         text-align: center;
         max-width: 300px;
     }
@@ -81,15 +85,13 @@
     display: flex;
     justify-content: start;
 }
-.socmedia__icons i {
-    padding: 10px 10px;
-    font-size: 40px;
-    color: rgb(67, 67, 73);
+.socmedia__icons img {
+    width: 100px;
 }
-.socmedia__icons i:hover {
-    font-size: 44px;
-    color: rgb(109, 111, 114);
-    transition: all 0.5s ease 0s;
+.socmedia__icons img:hover {
+    width: 110px;
+    transition: all 0.8s ease 0s;
+
 }
 .contakts__data-icons {
     width: 100%;
