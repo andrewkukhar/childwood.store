@@ -1,22 +1,24 @@
-function changeSelectForm() {
-    let bedForm = document.getElementById('model');
-    let colorItem = document.querySelector('.form__item-color');
-    let lastIndexColor = 0;
-    bedForm.addEventListener("change", function () {
-        let indexColor = bedForm.selectedIndex;
-        console.log(indexColor);
-        colorItem[lastIndexColor].innerHTML = ` `;
+let bedForm = document.getElementById('model');
+let colorItem = document.querySelector('.form-item-color');
+let optionItem = colorItem.value;
+console.log(optionItem);
 
-        colorItem[indexColor].innerHTML += `
-        
-        `;
-        lastIndexColor = indexColor;
-    });
-    console.log(indexColor);
-};
-// form__item-color
-// 
-// 
-// 
-// 
-console.log(indexColor);
+bedForm.addEventListener("change", function () {
+    let indexColor = bedForm.selectedIndex;
+    let indexOptione = option.index;
+    if (indexColor == 0) {
+        colorItem.innerHTML +=
+            `
+            <div id="col0" class="form-select-color">
+            <p>Спочатку оберіть модель ліжка, будь ласка</p>
+            </div>
+            `;
+    } else if (indexColor == 1) {
+
+    }
+    // colorItem[lastIndexColor].innerHTML = ` `;
+
+    //colorItem[indexColor].innerHTML += `
+    // 
+    //`;
+});
