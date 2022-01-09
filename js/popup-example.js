@@ -24,15 +24,3 @@ $(window).scroll(function () {
         $('.scrollup').fadeOut();
     }
 });
-// for change select
-// (function () {
-//     let bedForm = document.getElementById('model');
-//     let colorItem = document.querySelectorAll('.form-select-color');
-//     let lastIndexColor = 0;
-//     bedForm.addEventListener("change", function () {
-//         colorItem[lastIndexColor].style.display = "none";
-//         let indexColor = bedForm.selectedIndex;
-//         colorItem[indexColor].style.display = "block";
-//         lastIndexColor = indexColor;
-//     });
-// })();

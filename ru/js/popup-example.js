@@ -24,26 +24,3 @@ $(window).scroll(function () {
         $('.scrollup').fadeOut();
     }
 });
-// for change select
-(function () {
-    let bedForm = document.getElementById('model');
-    let colorItem = document.querySelectorAll('.form-select-color');
-    let lastIndexColor = 0;
-    bedForm.addEventListener("change", function () {
-        colorItem[lastIndexColor].style.display = "none";
-        let indexColor = bedForm.selectedIndex;
-        colorItem[indexColor].style.display = "block";
-        lastIndexColor = indexColor;
-    });
-})();
-// (function () {
-//     let bedForm = document.getElementById('colorScandi');
-//     let ralItem = document.querySelectorAll('.form__item-ral');
-//     let lastIndexRal = 0;
-//     bedForm.addEventListener("change", function () {
-//         ralItem[lastIndexRal].style.display = "none";
-//         let indexRal = bedForm.selectedIndex;
-//         ralItem[indexRal].style.display = "block";
-//         lastIndexRal = indexRal;
-//     });
-// })();

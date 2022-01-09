@@ -55,7 +55,7 @@
         align-items: center;
         justify-content: center;
     }
-    .footer__link, 
+    .footer__link,
     .footer__contakts,
     .footer__socmedia {
         display: flex;
@@ -77,7 +77,7 @@
 }
 .list__links a:hover {
     color: rgb(109, 111, 114);
-    font-size: 17px;
+    font-size: 16.5px;
     border-bottom: 1px solid #000;
     transition: all 0.5s ease 0s;
 }
@@ -86,12 +86,7 @@
     justify-content: start;
 }
 .socmedia__icons img {
-    width: 100px;
-}
-.socmedia__icons img:hover {
-    width: 110px;
-    transition: all 0.8s ease 0s;
-
+    width: 60px;
 }
 .contakts__data-icons {
     width: 100%;
@@ -105,7 +100,8 @@
     padding: 20px 10px 0px 10px;
 }
 .contakts__data-icons i:hover {
-    font-size: 35px;
+    font-size: 32.5px;
+    padding: 10px 5px 0px 5px;
 }
 /* footer */
 /* scrollup button */
