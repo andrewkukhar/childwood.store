@@ -1,13 +1,22 @@
-(function () {
+function changeSelectForm() {
     let bedForm = document.getElementById('model');
-    let colorItem = document.querySelectorAll('.form-select-color');
+    let colorItem = document.querySelector('.form__item-color');
     let lastIndexColor = 0;
     bedForm.addEventListener("change", function () {
-        colorItem[lastIndexColor].innerHTML = ` `;
         let indexColor = bedForm.selectedIndex;
+        console.log(indexColor);
+        colorItem[lastIndexColor].innerHTML = ` `;
+
         colorItem[indexColor].innerHTML += `
         
         `;
         lastIndexColor = indexColor;
     });
-})();
+    console.log(indexColor);
+};
+// form__item-color
+// 
+// 
+// 
+// 
+console.log(indexColor);

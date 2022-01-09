@@ -36,3 +36,4 @@ $(window).scroll(function () {
         lastIndexColor = indexColor;
     });
 })();
+console.log(innerHeight);
